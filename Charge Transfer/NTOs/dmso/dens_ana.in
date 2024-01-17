@@ -1,0 +1,12 @@
+rtype='ricc2'
+rfile='ricc2.log'
+read_binary=True
+mo_file='molden.input'
+comp_ntos=True
+comp_dntos=False
+molden_orbitals=True
+alphabeta=False
+cube_orbitals=False
+comp_p_h_dens=False
+comp_rho0n=False
+prop_list=['PRNTO', 'Z_HE']
