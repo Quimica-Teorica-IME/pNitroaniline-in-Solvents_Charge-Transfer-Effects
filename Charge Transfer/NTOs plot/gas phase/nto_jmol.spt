@@ -1,0 +1,147 @@
+load molden.input FILTER "nosort"
+mo titleformat ""
+
+background white
+mo fill
+mo cutoff 0.04
+
+mo color blue red
+mo [ 1.000 33]
+write image pngt "NTO1-1-a_1o_0.96.png"
+mo color orange green
+mo [ 0.804 37 -0.444 38 0.334 49 -0.212 54]
+write image pngt "NTO1-1-a_1v_0.96.png"
+
+mo color blue red
+mo [ -1.000 36]
+write image pngt "NTO2-1-a_1o_0.94.png"
+mo color orange green
+mo [ -0.878 37 0.462 38]
+write image pngt "NTO2-1-a_1v_0.94.png"
+
+mo color blue red
+mo [ 0.994 31]
+write image pngt "NTO3-1-a_1o_0.95.png"
+mo color orange green
+mo [ 0.812 37 -0.439 38 0.317 49]
+write image pngt "NTO3-1-a_1v_0.95.png"
+
+mo color blue red
+mo [ -1.000 36]
+write image pngt "NTO4-1-a_1o_0.71.png"
+mo color orange green
+mo [ -0.938 41 0.321 42]
+write image pngt "NTO4-1-a_1v_0.71.png"
+mo color blue red
+mo [ 1.000 35]
+write image pngt "NTO4-1-a_2o_0.25.png"
+mo color orange green
+mo [ 0.831 37 -0.438 38 -0.246 46]
+write image pngt "NTO4-1-a_2v_0.25.png"
+
+mo color blue red
+mo [ 0.971 36 0.229 32]
+write image pngt "NTO5-1-a_1o_0.95.png"
+mo color orange green
+mo [ 0.852 38 0.454 37]
+write image pngt "NTO5-1-a_1v_0.95.png"
+
+mo color blue red
+mo [ -0.751 35 -0.660 34]
+write image pngt "NTO6-1-a_1o_0.81.png"
+mo color orange green
+mo [ -0.867 37 0.466 38]
+write image pngt "NTO6-1-a_1v_0.81.png"
+mo color blue red
+mo [ -0.971 36 -0.241 32]
+write image pngt "NTO6-1-a_2o_0.13.png"
+mo color orange green
+mo [ 0.958 41 -0.286 42]
+write image pngt "NTO6-1-a_2v_0.13.png"
+
+mo color blue red
+mo [ -0.834 34 0.552 35]
+write image pngt "NTO7-1-a_1o_0.82.png"
+mo color orange green
+mo [ -0.863 37 0.463 38]
+write image pngt "NTO7-1-a_1v_0.82.png"
+mo color blue red
+mo [ -0.870 36 -0.494 32]
+write image pngt "NTO7-1-a_2o_0.12.png"
+mo color orange green
+mo [ -0.942 41 0.269 42]
+write image pngt "NTO7-1-a_2v_0.12.png"
+
+mo color blue red
+mo [ 0.996 36]
+write image pngt "NTO8-1-a_1o_0.84.png"
+mo color orange green
+mo [ 0.645 49 0.437 46 -0.353 45 0.308 40 -0.295 54]
+write image pngt "NTO8-1-a_1v_0.84.png"
+mo color blue red
+mo [ -0.997 32]
+write image pngt "NTO8-1-a_2o_0.06.png"
+mo color orange green
+mo [ 0.900 37 -0.392 38]
+write image pngt "NTO8-1-a_2v_0.06.png"
+mo color blue red
+mo [ 1.000 35]
+write image pngt "NTO8-1-a_3o_0.06.png"
+mo color orange green
+mo [ 0.948 41 -0.317 42]
+write image pngt "NTO8-1-a_3v_0.06.png"
+
+mo color blue red
+mo [ -0.985 36]
+write image pngt "NTO9-1-a_1o_0.94.png"
+mo color orange green
+mo [ -0.950 39 0.259 42]
+write image pngt "NTO9-1-a_1v_0.94.png"
+
+mo color blue red
+mo [ 0.996 36]
+write image pngt "NTO10-1-a_1o_0.92.png"
+mo color orange green
+mo [ 0.861 40 -0.297 44 -0.205 49]
+write image pngt "NTO10-1-a_1v_0.92.png"
+
+mo color blue red
+mo [ 1.000 33]
+write image pngt "NTO11-1-a_1o_0.95.png"
+mo color orange green
+mo [ 0.944 41 -0.329 42]
+write image pngt "NTO11-1-a_1v_0.95.png"
+
+mo color blue red
+mo [ -0.996 36]
+write image pngt "NTO12-1-a_1o_0.95.png"
+mo color orange green
+mo [ -0.744 44 -0.577 43 0.202 56]
+write image pngt "NTO12-1-a_1v_0.95.png"
+
+mo color blue red
+mo [ 0.986 35]
+write image pngt "NTO13-1-a_1o_0.87.png"
+mo color orange green
+mo [ 0.934 41 -0.317 42]
+write image pngt "NTO13-1-a_1v_0.87.png"
+mo color blue red
+mo [ 0.838 36 0.498 32 -0.224 29]
+write image pngt "NTO13-1-a_2o_0.07.png"
+mo color orange green
+mo [ -0.609 49 0.520 37 -0.402 46 -0.313 38 0.276 45]
+write image pngt "NTO13-1-a_2v_0.07.png"
+
+mo color blue red
+mo [ 1.000 31]
+write image pngt "NTO14-1-a_1o_0.95.png"
+mo color orange green
+mo [ 0.935 41 -0.325 42]
+write image pngt "NTO14-1-a_1v_0.95.png"
+
+mo color blue red
+mo [ 1.000 35]
+write image pngt "NTO15-1-a_1o_0.95.png"
+mo color orange green
+mo [ 0.835 38 0.434 37 0.235 40]
+write image pngt "NTO15-1-a_1v_0.95.png"
