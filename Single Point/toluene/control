@@ -1,0 +1,153 @@
+$cosmo_correlated
+ econv=1.d-6
+ qmaxconv=1.d-5
+ qrmsconv=1.d-6
+ cycle
+$cosmo_data  file=cosmotransfer
+$cosmo
+  epsilon=    2.374
+  rsolv= 1.30
+$cosmo_atoms
+# radii in Angstrom units
+c  1-6                                                                         \
+   radius=  2.0000
+h  7-10,15-16                                                                  \
+   radius=  1.3000
+n  11,14                                                                       \
+   radius=  1.8300
+o  12-13                                                                       \
+   radius=  1.7200
+$cosmo_out file=out.ccf
+$title
+ADC(2) - opt by CAM-B3LYP gaussian
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$coord    file=coord
+$user-defined bonds    file=coord
+$atoms
+c  1-6                                                                         \
+   basis =c def2-TZVPD                                                         \
+   cbas  =c def2-TZVPD
+h  7-10,15-16                                                                  \
+   basis =h def2-TZVPD                                                         \
+   cbas  =h def2-TZVPD
+n  11,14                                                                       \
+   basis =n def2-TZVPD                                                         \
+   cbas  =n def2-TZVPD
+o  12-13                                                                       \
+   basis =o def2-TZVPD                                                         \
+   cbas  =o def2-TZVPD
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=121327
+   natoms=16
+   nshell=162
+   nbf(CAO)=490
+   nbf(AO)=430
+   dim(trafo[SAO<-->AO/CAO])=610
+   rhfshells=1
+   nt1amt=14184
+$scfmo   file=mos
+$closed shells
+ a       1-36                                   ( 2 )
+$scfiterlimit       30
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$optimize
+   internal   on
+   redundant  on
+   cartesian  off
+   global     off
+   basis      off   logarithm
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$lock off
+$maxcor      500
+$denconv     0.10000000E-07
+$ricc2
+  adc(2)
+  maxiter=  500
+$cbas    file=auxbasis
+$excitations
+  irrep=a  multiplicity=  1  nexc= 15  npre=  0  nstart=  0
+  spectrum states=all operators=diplen,dipvel,angmom
+  exprop relaxed states=all
+$spectrum ev
+$response
+fop relaxed
+$scfinstab rpas
+$soes
+ a           15
+$last step     tm2molden
+$last SCF energy change = 0.21602406E-05
+$charge from dscf
+         -0.000 (not to be modified here)
+$dipole from dscf
+  x    -3.28209588748228    y     0.00004780345366    z     0.26088677840710    a.u.
+   | dipole | =    8.3686319068  debye
+$orbital_max_rnorm 0.10351637386236E-04
+$excitation_energies_CCS_____1^a___ file=exstates
+$excitation_energies_ADC(2)__1^a___ file=exstates
+$t2_norm_of_re0_ADC(2)__1^a___ file=exstates
+$<le0|re0>-overlap_ADC(2)__1^a___ file=exstates
+$<le01|re01>-overlap_ADC(2)__1^a___ file=exstates
+$<le02|re02>-overlap_ADC(2)__1^a___ file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____1 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____2 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____3 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____4 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____5 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____6 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____7 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____8 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____9 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a____10 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a____11 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a____12 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a____13 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a____14 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a____15 file=exstates
+$exstprop_ADC(2)___1^a_____1 file=exstates
+$exstprop_ADC(2)___1^a_____2 file=exstates
+$exstprop_ADC(2)___1^a_____3 file=exstates
+$exstprop_ADC(2)___1^a_____4 file=exstates
+$exstprop_ADC(2)___1^a_____5 file=exstates
+$exstprop_ADC(2)___1^a_____6 file=exstates
+$exstprop_ADC(2)___1^a_____7 file=exstates
+$exstprop_ADC(2)___1^a_____8 file=exstates
+$exstprop_ADC(2)___1^a_____9 file=exstates
+$exstprop_ADC(2)___1^a____10 file=exstates
+$exstprop_ADC(2)___1^a____11 file=exstates
+$exstprop_ADC(2)___1^a____12 file=exstates
+$exstprop_ADC(2)___1^a____13 file=exstates
+$exstprop_ADC(2)___1^a____14 file=exstates
+$exstprop_ADC(2)___1^a____15 file=exstates
+$end

@@ -1,0 +1,14 @@
+# all values without outlying charge correction
+# (outlying charge corrected values can be found in the output file)
+#
+# cycle    E(total)           E(diel MP2)           E(MP2)      delta charge (rms) delta charge(max)
+  0    -491.4266392771      -0.0238150814      -2.0031405836  0.32894E-03  0.11239E-02
+  1    -491.4266920224      -0.0233215695      -2.0037943151  0.40861E-04 -0.14447E-03
+  2    -491.4266933954      -0.0231944376      -2.0038825450  0.90622E-05 -0.47364E-04
+  3    -491.4266933190      -0.0231570533      -2.0039001691  0.23034E-05 -0.12618E-04
+  4    -491.4266932113      -0.0231453735      -2.0039040879  0.65009E-06 -0.32663E-05
+# Conv. crit.:
+# tot. energy  :  0.10000E-05
+# delta charge (max.):  0.10000E-04
+# delta charge (rms) :  0.10000E-05
+#### converged ####
