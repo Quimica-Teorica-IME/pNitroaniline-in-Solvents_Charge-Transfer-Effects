@@ -1,0 +1,83 @@
+$title
+ADC(2) - opt by CAM-B3LYP gaussian
+$operating system unix
+$symmetry c1
+$redundant    file=coord
+$coord    file=coord
+$user-defined bonds    file=coord
+$atoms
+c  1-6                                                                         \
+   basis =c def2-TZVPD                                                         \
+   cbas  =c def2-TZVPD
+h  7-10,15-16                                                                  \
+   basis =h def2-TZVPD                                                         \
+   cbas  =h def2-TZVPD
+n  11,14                                                                       \
+   basis =n def2-TZVPD                                                         \
+   cbas  =n def2-TZVPD
+o  12-13                                                                       \
+   basis =o def2-TZVPD                                                         \
+   cbas  =o def2-TZVPD
+$basis    file=basis
+$rundimensions
+   dim(fock,dens)=121327
+   natoms=16
+   nshell=162
+   nbf(CAO)=490
+   nbf(AO)=430
+   dim(trafo[SAO<-->AO/CAO])=610
+   rhfshells=1
+$scfmo   file=mos
+$closed shells
+ a       1-36                                   ( 2 )
+$scfiterlimit       30
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$optimize
+   internal   on
+   redundant  on
+   cartesian  off
+   global     off
+   basis      off   logarithm
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$lock off
+$maxcor      500
+$denconv     0.10000000E-07
+$ricc2
+  adc(2)
+  maxiter=  500
+$cbas    file=auxbasis
+$excitations
+  irrep=a  multiplicity=  1  nexc= 15  npre=  0  nstart=  0
+$scfinstab rpas
+$soes
+ a           15
+$end

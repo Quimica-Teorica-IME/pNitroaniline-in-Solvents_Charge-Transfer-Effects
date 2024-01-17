@@ -1,0 +1,3795 @@
+ hostname is         dlt16.abaxnet
+ this is node-proc. number 0 running on node dlt16.abaxnet
+ the total number of node-proc. spawned is   1
+
+ ricc2 (dlt16.abaxnet) : TURBOMOLE V6.6( 19125 ) 27 May 2014 at 14:24:19
+ Copyright (C) 2014 TURBOMOLE GmbH, Karlsruhe
+
+
+    2023-02-13 10:55:20.956 
+
+
+
+                              R I C C 2 - PROGRAM
+
+                          the quantum chemistry groups
+                             at the universities in
+                           Karlsruhe, Bochum & Mainz
+                                   Germany
+
+
+
+   *-----------------------------------------------------------------------*
+   |                     program will use  1 thread(s)                     |
+   *-----------------------------------------------------------------------*
+
+
+              +--------------------------------------------------+
+              | Atomic coordinate, charge and isotop information |
+              +--------------------------------------------------+
+
+                    atomic coordinates            atom    charge  isotop
+         -1.25887898   -2.28332963   -0.02494864    c      6.000     0
+         -2.55749311    0.00000000   -0.02369197    c      6.000     0
+         -1.25887709    2.28332963   -0.02495431    c      6.000     0
+          1.33208862    2.28500771   -0.02695175    c      6.000     0
+          2.68682384    0.00000000   -0.02643774    c      6.000     0
+          1.33208673   -2.28500771   -0.02694608    c      6.000     0
+         -2.29779371   -4.03823136   -0.02237105    h      1.000     0
+         -2.29779182    4.03823325   -0.02238050    h      1.000     0
+          2.35121792    4.05719665   -0.02923454    h      1.000     0
+          2.35121792   -4.05719476   -0.02922320    h      1.000     0
+         -5.27331869    0.00000000   -0.01799633    n      7.000     0
+         -6.38120465    2.02694482   -0.01556804    o      8.000     0
+         -6.38120276   -2.02694671   -0.01558315    o      8.000     0
+          5.24411273    0.00000000   -0.07034742    n      7.000     0
+          6.20450746    1.61720306    0.18832019    h      1.000     0
+          6.20450557   -1.61720495    0.18831452    h      1.000     0
+ 
+       center of nuclear mass  :   -1.36593396   -0.00000021   -0.02395682
+       center of nuclear charge:   -1.22407413   -0.00000018   -0.02108018
+
+              +--------------------------------------------------+
+              |               basis set information              |
+              +--------------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    c        6     52     37   def2-TZVPD   [6s3p3d1f|12s6p3d1f]
+    h        6     11      9   def2-TZVPD   [3s2p|5s2p]
+    n        2     52     37   def2-TZVPD   [6s3p3d1f|12s6p3d1f]
+    o        2     55     40   def2-TZVPD   [6s4p3d1f|12s7p3d1f]
+   ---------------------------------------------------------------------------
+   total:   16    592    430
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   74
+   total number of contracted shells         :  162
+   total number of cartesian basis functions :  490
+   total number of SCF-basis functions       :  430
+
+
+
+   =========================================================================
+
+
+     restricted closed shell calculation for the wavefunction models:
+               ADC(2)     - Algebraic Diagrammatic Construction to 2. Order (strict)
+
+
+     global parameters for ricc2 program:
+
+        hard restart (reuse of interm.) :  enabled 
+        soft restart (reuse of vectors) :  disabled
+        threshold for vector function   :    0.100000E-06
+        convergence threshold energy    :    0.100000E-07
+        linear dependence threshold     :    0.100000E-13
+        global print level              :      1
+        maximum number of iterations    :   500
+        maximum number DIIS vectors     :    10
+        max. dim. of reduced space      :   100
+        core memory limit (MB)          :   500
+        disk space limit (MB)           :   none
+
+
+   =========================================================================
+     "cartesian on" in $drvopt is ignored by $ricc2
+
+    der. integral neglect threshold  :  0.10E-08
+    integral neglect threshold       :  0.68E-12
+    integral storage threshold THIZE :  0.10E-04
+    integral storage threshold THIME :         5
+
+
+                  +------------------------------------------+
+                  |     Auxiliary basis set information      |
+                  +------------------------------------------+
+
+              we will work with the 1s 3p 5d 7f 9g ... basis set
+              ...i.e. with spherical basis functions...
+
+   type   atoms  prim   cont   basis
+   ---------------------------------------------------------------------------
+    c        6     97     92   def2-TZVPD   [9s7p5d4f1g|9s7p6d4f1g]
+    h        6     32     24   def2-TZVPD   [5s3p2d|5s4p3d]
+    n        2     97     92   def2-TZVPD   [9s7p5d4f1g|9s7p6d4f1g]
+    o        2     97     92   def2-TZVPD   [9s7p5d4f1g|9s7p6d4f1g]
+   ---------------------------------------------------------------------------
+   total:   16   1162   1064
+   ---------------------------------------------------------------------------
+
+   total number of primitive shells          :   93
+   total number of contracted shells         :  320
+   total number of cartesian basis functions : 1306
+   total number of SCF-basis functions       : 1064
+
+
+ symmetry group of the molecule :   c1 
+
+ the group has the following generators :
+   c1(z)
+
+    1 symmetry operations found
+
+ there are 1 real representations :   a   
+
+ maximum number of shells which are related by symmetry :  1
+
+
+ The symmetry information takes   1 MB
+
+*---------------------------------------------------------------------*
+|               simplified C1 algorithm will be applied               |
+*---------------------------------------------------------------------*
+ ==============================================================================
+                      COSMO switched on
+ ==============================================================================
+            ======================================================
+                      COSMO settings in RICC2
+                   --------------------------
+             Solvent charges are equilibrated for ground state
+             "cycle" indicates frozen COSMO charges,
+             hence no COSMO CPHF contribution included
+             COSMO linear response (LR) contribution included
+             Outlying Charge Correction (OCC) is performed
+             Using epsilon          =    35.688
+             Using refractive index =     1.300
+            ======================================================
+        IMPORTANT NOTICE: The calculation of the solvent contributions will
+         need the relaxed densities in general. Therefore the actual COSMO
+         energies will be output only at the end of the run. Any energies
+         or excitation energies quoted before that are only intermediate
+         quantities and should be ignored unless you know what you are doing!
+
+  MOs are in ASCII format !
+
+
+ reading orbital data $scfmo  from file mos . 
+
+ orbital characterization : scfconv=7
+ 
+
+         --------------------------------------------------------------
+                   checking mo's by calculating trace(D*S)
+
+              number of electrons : 
+                 from trace(D*S)         :   71.999999999995
+                 from occupation numbers :   72.000000000000
+
+              molecular charge           :    0.000000000000
+         --------------------------------------------------------------
+
+ time elapsed for calculating density matrices :   0.021 sec
+ all orbitals will be active in the correlation treatment
+
+  ----------------------------------------------------------------------------
+  hard_restart flag is disabled because the check sum for the
+  molecular orbitals "$chkmos" differs from the reference value:
+  reference value:     4980187.23225350    
+  computed value :     4980187.23188196    
+  relative error :    0.746028658471810E-10
+  tolerance      :    0.100000000000000E-11
+  the calculation will proceed...
+  ----------------------------------------------------------------------------
+
+
+   Molecular Orbital Statistic:
+   ============================
+
+   -----------------------------
+   orbitals in total:
+   -----------------------------
+    frozen occupied :      0
+    active occupied :     36
+    active virtual  :    394
+    frozen virtual  :      0
+    all together    :    430
+   -----------------------------
+
+
+     time in riccmos       cpu:  0.21 sec    wall:  0.54 sec    ratio:  0.4
+
+     total memory allocated for calculation of (Q|P)**(-1/2) : 13 MiB
+
+
+     calculation of (P|Q) ...
+     time in lp2sym        cpu:  0.04 sec    wall:  0.04 sec    ratio:  1.0
+
+
+     calculation of the Cholesky decomposition of (P|Q)**(-1) ...
+     time in invmetri      cpu:  0.14 sec    wall:  0.22 sec    ratio:  0.6
+
+   threshold for RMS(d[D]) in SCF was     :  0.10E-07
+   integral neglect threshold             :  0.68E-12
+   derivative integral neglect threshold  :  0.10E-08
+
+
+ setting up bound for integral derivative estimation
+
+ increment for numerical differentiation : 0.00050000
+
+   =========================================================================
+
+     Energy of reference wave function is  -489.4223114226000
+     Maximum orbital residual is           0.7327248468591E-05
+
+
+     Number of symmetry-nonredundant auxiliary basis functions:     1064
+
+     Block lengths for integral files:
+        frozen occupied (BOI):        0 MiB
+        active occupied (BJI):        1 MiB
+        active virtual  (BAI):        4 MiB
+        frozen virtual  (BGI):        0 MiB
+               general  (BTI):        4 MiB
+
+   =========================================================================
+
+
+
+
+   **************************************************************************
+   *                                                                        *
+   *          OPTIMIZATION OF THE GROUND STATE CLUSTER AMPLITUDES           *
+   *                                                                        *
+   **************************************************************************
+
+
+   Iter.   MP2 energy       Norm(Omega)    Norm(t1)  Norm(t2)     cpu    wall
+   ...........................................................................
+    1   -491.4261730637    0.1614808170     0.00000   0.44528    0.57    0.71
+   ...........................................................................
+
+
+     time in total         cpu: 34.42 sec    wall: 42.67 sec    ratio:  0.8
+
+
+     **********************************************************************
+     *                                                                    *
+     *   RHF  energy                             :   -489.4223114226      *
+     *   MP2 correlation energy                  :     -2.0038616411      *
+     *                                                                    *
+     *   Final MP2 energy                        :   -491.4261730637      *
+     *                                                                    *
+     *   Norm of MP1 T2 amplitudes               :      0.4452813035      *
+     *                                                                    *
+     *   D1 diagnostic                           :      0.0594            *
+     *                                                                    *
+     **********************************************************************
+
+ Using refractive index n                   =    1.30000000000000     
+ Screening function (n**2-1)/(n**2+0.5)     =   0.315068493150685     
+
+
+ **************************************************************
+ *                                                            *
+ *    OPTIMIZATION OF THE EXCITED STATE CLUSTER AMPLITUDES    *
+ *                                                            *
+ **************************************************************
+
+
+  preoptimize excitation energies/vectors using CCS:
+
+  ==================================================
+
+
+ ======== LINEAR CC RESPONSE SOLVER ========
+
+    threshold for convergence: 0.10E-02
+    maximum number of simultaneous jacoby matrix transformations: 15
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- guessed as rhs/(e_a-e_i) :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      1      15         2.81     0.14E+00  (  1)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      2      15         2.60     0.51E-01  (  1)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      3      15         2.75     0.81E-01  (  7)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      4      15         2.51     0.14E+00  ( 14)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      5      15         2.74     0.17E+00  ( 14)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+  dimension of red. space became too large.
+  try internal restart...
+      6      15         2.57     0.87E-01  (  3)
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      7      15         2.77     0.87E-01  (  3)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      8      11         1.87     0.30E-01  (  2)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      9       9         1.58     0.92E-02  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     10       6         1.16     0.41E-02  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     11       4         0.81     0.12E-02  ( 13)
+ COSMO cphf update
+     12       1         0.27     0.85E-03  ( 13)
+    --------------------------------------------
+    converged in 12 iterations
+
+         Total time         24.46 minutes
+
+
+ ===========================================
+
+
+
+
+ Note that this is the intermediate result of a preoptimization!
+ The convergence threshold was  0.1E-02 only!
+ COSMO: note that the excitation energies below do not include
+        the nonequilibrium contributions yet. These require the
+        computation of the relaxed densities. See end of output
+        for a final list of corrected excitations.
+
+
+ +==================================================================+
+ | sym | multi | state |          CCS excitation energies           |
+ |     |       |       +--------------------------------------------+
+ |     |       |       |   Hartree    |     eV       |     cm-1     |
+ +==================================================================+
+ | a   |   1   |   1   |    0.1792440 |      4.87748 |    39339.515 |
+ | a   |   1   |   2   |    0.1974486 |      5.37285 |    43334.965 |
+ | a   |   1   |   3   |    0.2037022 |      5.54302 |    44707.473 |
+ | a   |   1   |   4   |    0.2129405 |      5.79440 |    46735.030 |
+ | a   |   1   |   5   |    0.2297314 |      6.25131 |    50420.223 |
+ | a   |   1   |   6   |    0.2454139 |      6.67805 |    53862.125 |
+ | a   |   1   |   7   |    0.2576286 |      7.01043 |    56542.935 |
+ | a   |   1   |   8   |    0.2584385 |      7.03247 |    56720.704 |
+ | a   |   1   |   9   |    0.2626816 |      7.14793 |    57651.936 |
+ | a   |   1   |  10   |    0.2660190 |      7.23875 |    58384.433 |
+ | a   |   1   |  11   |    0.2789581 |      7.59084 |    61224.223 |
+ | a   |   1   |  12   |    0.2831342 |      7.70447 |    62140.765 |
+ | a   |   1   |  13   |    0.2851725 |      7.75994 |    62588.122 |
+ | a   |   1   |  14   |    0.2935550 |      7.98804 |    64427.865 |
+ | a   |   1   |  15   |    0.2954062 |      8.03841 |    64834.175 |
+ +==================================================================+
+
+
+
+
+  preoptimize ADC(2) excitation energies/vectors using a quasi linear algorithm:
+  ==============================================================================
+
+
+ ======== LINEAR CC RESPONSE SOLVER ========
+
+    threshold for convergence: 0.10E-02
+    maximum number of simultaneous jacoby matrix transformations: 15
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ threshold for this macro iteration:  5.427131395862564E-002
+      1      15        14.13     0.93E-01  (  2)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ ...adapted threshold to:  6.510388113596582E-002
+      2       8         7.28     0.37E-01  ( 12)
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ threshold for this macro iteration:  7.170966228073561E-003
+      3      15        14.07     0.37E-01  ( 12)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      4      15        13.72     0.15E-01  ( 11)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      5      14        13.01     0.10E-01  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      6       4         3.66     0.15E-01  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+      7       1         1.14     0.31E-01  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      8       2         2.00     0.13E-01  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+      9       1         1.16     0.74E-02  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+     10       1         1.32     0.67E-02  (  4)
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ threshold for this macro iteration:  8.920003886441596E-003
+     11      15        13.94     0.72E-02  ( 11)
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ threshold for this macro iteration:  1.428599244669759E-003
+     12      15        14.35     0.71E-02  ( 11)
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     13       2         1.94     0.43E-02  ( 11)
+ COSMO cphf update
+ COSMO cphf update
+     14       1         1.10     0.18E-02  ( 11)
+ COSMO cphf update
+ COSMO cphf update
+     15       1         1.12     0.11E-02  ( 13)
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ threshold for this macro iteration:  1.788160264738659E-003
+     16      15        13.67     0.17E-02  ( 13)
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ threshold for this macro iteration:  1.000000000000000E-003
+     17      15        13.82     0.19E-02  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+     18       1         1.14     0.10E-02  ( 13)
+ COSMO cphf update
+ COSMO cphf update
+     19       1         1.11     0.56E-03  ( 13)
+    --------------------------------------------
+    converged in 19 iterations
+
+         Total time        133.73 minutes
+
+
+ ===========================================
+
+
+
+
+ Note that this is the intermediate result of a preoptimization!
+ The convergence threshold was  0.1E-02 only!
+ COSMO: note that the excitation energies below do not include
+        the nonequilibrium contributions yet. These require the
+        computation of the relaxed densities. See end of output
+        for a final list of corrected excitations.
+
+
+ +==================================================================+
+ | sym | multi | state |          ADC(2) excitation energies        |
+ |     |       |       +--------------------------------------------+
+ |     |       |       |   Hartree    |     eV       |     cm-1     |
+ +==================================================================+
+ | a   |   1   |   1   |    0.1336450 |      3.63667 |    29331.692 |
+ | a   |   1   |   2   |    0.1379254 |      3.75314 |    30271.120 |
+ | a   |   1   |   3   |    0.1677286 |      4.56413 |    36812.167 |
+ | a   |   1   |   4   |    0.1686886 |      4.59025 |    37022.875 |
+ | a   |   1   |   5   |    0.1923390 |      5.23381 |    42213.531 |
+ | a   |   1   |   6   |    0.2112650 |      5.74881 |    46367.301 |
+ | a   |   1   |   7   |    0.2114343 |      5.75342 |    46404.472 |
+ | a   |   1   |   8   |    0.2200928 |      5.98903 |    48304.785 |
+ | a   |   1   |   9   |    0.2354830 |      6.40782 |    51682.551 |
+ | a   |   1   |  10   |    0.2443461 |      6.64900 |    53627.777 |
+ | a   |   1   |  11   |    0.2496541 |      6.79343 |    54792.735 |
+ | a   |   1   |  12   |    0.2551214 |      6.94221 |    55992.674 |
+ | a   |   1   |  13   |    0.2569248 |      6.99128 |    56388.473 |
+ | a   |   1   |  14   |    0.2692587 |      7.32690 |    59095.443 |
+ | a   |   1   |  15   |    0.2704031 |      7.35804 |    59346.631 |
+ +==================================================================+
+
+
+
+
+
+  solve for ADC(2) excitation energies/vectors using a DIIS algorithm:
+  =================================================================
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : RE0
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+
+ ========= DIIS CC RESPONSE SOLVER =========
+
+    threshold for convergence:0.10E-05
+    max. nb. of DIIS vectors :      10
+    maximum number of simultaneous jacoby matrix transformations: 15
+
+    Iter  #Vectors  time (min)   residual
+    --------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      1      15        14.01     0.51E-03  ( 11)    0.13E+00
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      2      15        13.98     0.28E-03  ( 11)    0.52E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      3      15        14.48     0.21E-03  ( 15)    0.10E-01
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      4      13        12.23     0.21E-03  ( 15)    0.78E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      5      11        10.48     0.21E-03  ( 15)    0.40E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      6      10         9.48     0.19E-03  ( 15)    0.36E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      7       7         6.40     0.17E-03  ( 15)    0.41E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      8       7         6.19     0.14E-03  ( 15)    0.34E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+      9       6         5.43     0.11E-03  ( 15)    0.36E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     10       5         4.84     0.72E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     11       5         4.48     0.41E-04  ( 15)    0.36E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     12       5         4.50     0.27E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     13       5         4.71     0.20E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     14       3         2.98     0.18E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     15       3         2.77     0.16E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+ COSMO cphf update
+     16       2         1.95     0.15E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     17       1         1.10     0.13E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     18       1         1.63     0.12E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     19       1         1.30     0.12E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     20       1         1.14     0.12E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     21       1         1.56     0.12E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     22       1         1.19     0.12E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     23       1         1.13     0.12E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     24       1         1.11     0.12E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     25       1         1.12     0.10E-04  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     26       1         1.11     0.87E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     27       1         1.10     0.74E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     28       1         1.13     0.69E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     29       1         1.16     0.64E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     30       1         1.46     0.59E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     31       1         1.20     0.53E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     32       1         1.16     0.48E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     33       1         1.15     0.46E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     34       1         1.21     0.46E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     35       1         1.13     0.46E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     36       1         1.13     0.45E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     37       1         1.13     0.44E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     38       1         1.15     0.44E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     39       1         1.14     0.43E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     40       1         1.25     0.43E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     41       1         1.16     0.43E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     42       1         1.10     0.43E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     43       1         1.09     0.42E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     44       1         1.10     0.38E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     45       1         1.16     0.32E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     46       1         1.19     0.27E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     47       1         1.14     0.26E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     48       1         1.13     0.23E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     49       1         1.26     0.20E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     50       1         1.22     0.17E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     51       1         1.15     0.14E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     52       1         1.13     0.14E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     53       1         1.10     0.13E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     54       1         1.10     0.10E-05  ( 15)    0.35E-02
+ COSMO cphf update
+ COSMO cphf update
+     55       1         1.19     0.81E-06  ( 15)    0.35E-02
+    --------------------------------------
+    converged in  55 iterations
+
+   Total time        165.07 minutes
+
+
+ ===========================================
+
+
+ COSMO: note that the excitation energies below do not include
+        the nonequilibrium contributions yet. These require the
+        computation of the relaxed densities. See end of output
+        for a final list of corrected excitations.
+
+
+
+ +================================================================================+
+ | sym | multi | state |          ADC(2) excitation energies    |  %t1   |  %t2   |
+ |     |       |       +----------------------------------------+--------+--------+
+ |     |       |       |   Hartree    |    eV      |    cm-1    |    %   |    %   |
+ +================================================================================+
+ | a   |   1   |   1   |    0.1336438 |    3.63663 |  29331.429 |  87.55 |  12.45 |
+ | a   |   1   |   2   |    0.1379253 |    3.75314 |  30271.097 |  89.67 |  10.33 |
+ | a   |   1   |   3   |    0.1677285 |    4.56413 |  36812.155 |  90.11 |   9.89 |
+ | a   |   1   |   4   |    0.1686884 |    4.59025 |  37022.834 |  89.75 |  10.25 |
+ | a   |   1   |   5   |    0.1923387 |    5.23380 |  42213.469 |  88.22 |  11.78 |
+ | a   |   1   |   6   |    0.2112642 |    5.74879 |  46367.133 |  88.82 |  11.18 |
+ | a   |   1   |   7   |    0.2114348 |    5.75343 |  46404.570 |  91.88 |   8.12 |
+ | a   |   1   |   8   |    0.2200908 |    5.98898 |  48304.357 |  89.62 |  10.38 |
+ | a   |   1   |   9   |    0.2354833 |    6.40783 |  51682.617 |  91.44 |   8.56 |
+ | a   |   1   |  10   |    0.2443463 |    6.64900 |  53627.803 |  91.37 |   8.63 |
+ | a   |   1   |  11   |    0.2496696 |    6.79385 |  54796.133 |  85.22 |  14.78 |
+ | a   |   1   |  12   |    0.2551307 |    6.94246 |  55994.718 |  91.20 |   8.80 |
+ | a   |   1   |  13   |    0.2568993 |    6.99059 |  56382.881 |  91.68 |   8.32 |
+ | a   |   1   |  14   |    0.2692614 |    7.32697 |  59096.043 |  90.95 |   9.05 |
+ | a   |   1   |  15   |    0.2704083 |    7.35818 |  59347.754 |  91.80 |   8.20 |
+ +================================================================================+
+
+
+       Energy:     0.1336438 H      3.63663 eV    29331.429 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    1    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   37 a       37       |   0.96661      93.4   |
+     |   36 a       36       |   45 a       45       |  -0.12543       1.6   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95006
+
+
+       Energy:     0.1379253 H      3.75314 eV    30271.097 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    2    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   32 a       32       |   37 a       37       |   0.91195      83.2   |
+     |   32 a       32       |   49 a       49       |  -0.30848       9.5   |
+     |   30 a       30       |   37 a       37       |  -0.15131       2.3   |
+     |   32 a       32       |   54 a       54       |   0.13376       1.8   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.96759
+
+
+       Energy:     0.1677285 H      4.56413 eV    36812.155 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    3    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   31 a       31       |   37 a       37       |   0.91186      83.1   |
+     |   31 a       31       |   49 a       49       |  -0.29546       8.7   |
+     |   28 a       28       |   37 a       37       |  -0.13796       1.9   |
+     |   31 a       31       |   54 a       54       |   0.12713       1.6   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95397
+
+
+       Energy:     0.1686884 H      4.59025 eV    37022.834 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    4    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   43 a       43       |   0.78981      62.4   |
+     |   35 a       35       |   37 a       37       |   0.54006      29.2   |
+     |   35 a       35       |   45 a       45       |  -0.14309       2.0   |
+     |   36 a       36       |   50 a       50       |  -0.13990       2.0   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95551
+
+
+       Energy:     0.1923387 H      5.23380 eV    42213.469 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    5    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   35 a       35       |   37 a       37       |   0.74951      56.2   |
+     |   36 a       36       |   43 a       43       |  -0.49388      24.4   |
+     |   34 a       34       |   37 a       37       |   0.35840      12.8   |
+     |   34 a       34       |   49 a       49       |  -0.09436       0.9   |
+     |   35 a       35       |   49 a       49       |  -0.09342       0.9   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95177
+
+
+       Energy:     0.2112642 H      5.74879 eV    46367.133 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    6    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   34 a       34       |   37 a       37       |   0.86929      75.6   |
+     |   35 a       35       |   37 a       37       |  -0.30268       9.2   |
+     |   34 a       34       |   49 a       49       |  -0.21024       4.4   |
+     |   36 a       36       |   43 a       43       |   0.18900       3.6   |
+     |   33 a       33       |   43 a       43       |   0.09766       1.0   |
+     |   34 a       34       |   54 a       54       |   0.08878       0.8   |
+     |   36 a       36       |   50 a       50       |  -0.06174       0.4   |
+     |   34 a       34       |   73 a       73       |  -0.05424       0.3   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95138
+
+
+       Energy:     0.2114348 H      5.75343 eV    46404.570 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    7    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   38 a       38       |   0.77734      60.4   |
+     |   36 a       36       |   39 a       39       |   0.52472      27.5   |
+     |   36 a       36       |   44 a       44       |  -0.16670       2.8   |
+     |   36 a       36       |   64 a       64       |  -0.15953       2.5   |
+     |   33 a       33       |   39 a       39       |   0.12072       1.5   |
+     |   36 a       36       |   63 a       63       |   0.08487       0.7   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95460
+
+
+       Energy:     0.2200908 H      5.98898 eV    48304.357 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    8    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   49 a       49       |   0.77598      60.2   |
+     |   36 a       36       |   45 a       45       |  -0.39767      15.8   |
+     |   33 a       33       |   37 a       37       |   0.27932       7.8   |
+     |   36 a       36       |   60 a       60       |  -0.18806       3.5   |
+     |   35 a       35       |   43 a       43       |  -0.18214       3.3   |
+     |   36 a       36       |   54 a       54       |  -0.17476       3.1   |
+     |   33 a       33       |   49 a       49       |   0.08286       0.7   |
+     |   33 a       33       |   45 a       45       |  -0.06973       0.5   |
+     |   36 a       36       |   72 a       72       |  -0.06893       0.5   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95387
+
+
+       Energy:     0.2354833 H      6.40783 eV    51682.617 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:    9    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   42 a       42       |   0.58457      34.2   |
+     |   36 a       36       |   39 a       39       |  -0.56457      31.9   |
+     |   36 a       36       |   38 a       38       |   0.41992      17.6   |
+     |   36 a       36       |   44 a       44       |  -0.23796       5.7   |
+     |   33 a       33       |   42 a       42       |   0.12014       1.4   |
+     |   36 a       36       |   69 a       69       |   0.11484       1.3   |
+     |   33 a       33       |   39 a       39       |  -0.11335       1.3   |
+     |   36 a       36       |   58 a       58       |   0.10853       1.2   |
+     |   36 a       36       |   64 a       64       |  -0.10036       1.0   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95574
+
+
+       Energy:     0.2443463 H      6.64900 eV    53627.803 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:   10    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   40 a       40       |   0.83553      69.8   |
+     |   36 a       36       |   41 a       41       |  -0.46249      21.4   |
+     |   36 a       36       |   68 a       68       |   0.13148       1.7   |
+     |   36 a       36       |   65 a       65       |  -0.10716       1.1   |
+     |   35 a       35       |   38 a       38       |   0.09962       1.0   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95071
+
+
+       Energy:     0.2496696 H      6.79385 eV    54796.133 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:   11    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   33 a       33       |   37 a       37       |   0.92321      85.2   |
+     |   36 a       36       |   49 a       49       |  -0.24209       5.9   |
+     |   36 a       36       |   45 a       45       |   0.14894       2.2   |
+     |   33 a       33       |   45 a       45       |  -0.13083       1.7   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95022
+
+
+       Energy:     0.2551307 H      6.94246 eV    55994.718 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:   12    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   44 a       44       |   0.86393      74.6   |
+     |   36 a       36       |   38 a       38       |   0.23707       5.6   |
+     |   36 a       36       |   55 a       55       |  -0.22553       5.1   |
+     |   36 a       36       |   63 a       63       |  -0.18186       3.3   |
+     |   36 a       36       |   48 a       48       |  -0.17069       2.9   |
+     |   36 a       36       |   70 a       70       |  -0.10965       1.2   |
+     |   36 a       36       |   67 a       67       |  -0.10566       1.1   |
+     |   36 a       36       |   39 a       39       |  -0.09575       0.9   |
+     |   36 a       36       |   58 a       58       |  -0.08193       0.7   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95472
+
+
+       Energy:     0.2568993 H      6.99059 eV    56382.881 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:   13    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   35 a       35       |   43 a       43       |   0.92894      86.3   |
+     |   35 a       35       |   50 a       50       |  -0.12638       1.6   |
+     |   33 a       33       |   37 a       37       |   0.11661       1.4   |
+     |   36 a       36       |   49 a       49       |   0.11083       1.2   |
+     |   29 a       29       |   37 a       37       |  -0.11075       1.2   |
+     |   35 a       35       |   56 a       56       |   0.08903       0.8   |
+     |   33 a       33       |   49 a       49       |   0.07566       0.6   |
+     |   35 a       35       |   61 a       61       |  -0.07331       0.5   |
+     |   36 a       36       |   45 a       45       |  -0.06849       0.5   |
+     |   34 a       34       |   43 a       43       |   0.06656       0.4   |
+     |   36 a       36       |   44 a       44       |  -0.06401       0.4   |
+     |   35 a       35       |   75 a       75       |   0.05831       0.3   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95270
+
+
+       Energy:     0.2692614 H      7.32697 eV    59096.043 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:   14    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   36 a       36       |   42 a       42       |   0.66370      44.0   |
+     |   36 a       36       |   39 a       39       |   0.50343      25.3   |
+     |   36 a       36       |   48 a       48       |   0.32120      10.3   |
+     |   36 a       36       |   38 a       38       |  -0.23781       5.7   |
+     |   36 a       36       |   46 a       46       |  -0.21389       4.6   |
+     |   36 a       36       |   44 a       44       |   0.12813       1.6   |
+     |   36 a       36       |   62 a       62       |  -0.11582       1.3   |
+     |   33 a       33       |   42 a       42       |   0.10573       1.1   |
+     |   36 a       36       |   77 a       77       |  -0.08976       0.8   |
+     |   36 a       36       |   64 a       64       |  -0.07228       0.5   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.95370
+
+
+       Energy:     0.2704083 H      7.35818 eV    59347.754 cm-1
+
+     +=======================================================================+
+     | type: RE0                    symmetry: a               state:   15    |
+     +-----------------------+-----------------------+-----------------------+
+     | occ. orb.  index spin | vir. orb.  index spin |  coeff/|amp|     %    |
+     +=======================+=======================+=======================+
+     |   35 a       35       |   38 a       38       |   0.72128      52.0   |
+     |   36 a       36       |   41 a       41       |  -0.35964      12.9   |
+     |   36 a       36       |   40 a       40       |  -0.32436      10.5   |
+     |   35 a       35       |   39 a       39       |   0.29743       8.8   |
+     |   36 a       36       |   47 a       47       |  -0.19099       3.6   |
+     |   35 a       35       |   44 a       44       |  -0.17937       3.2   |
+     |   35 a       35       |   64 a       64       |  -0.17462       3.0   |
+     |   35 a       35       |   42 a       42       |   0.14384       2.1   |
+     +=======================+=======================+=======================+
+     norm of printed elements:  0.96310
+
+
+
+     Info: copy ADC(2) right eigenvectors into left eigenvector files.
+
+
+                    ========   CC DENSITY MODULE   ========
+
+                      current wave-function model: ADC(2)  
+
+  calculating overlap between   15 left and right vector(s)
+    density nr.      cpu/min        wall/min    L     R
+   ------------------------------------------------------
+         1             0.71            0.75    LE0    RE0 
+         2             0.72            0.77    LE0    RE0 
+         3             0.71            0.75    LE0    RE0 
+         4             0.72            0.88    LE0    RE0 
+         5             0.71            0.81    LE0    RE0 
+         6             0.72            0.76    LE0    RE0 
+         7             0.71            0.75    LE0    RE0 
+         8             0.72            0.76    LE0    RE0 
+         9             0.72            0.77    LE0    RE0 
+        10             0.72            0.76    LE0    RE0 
+        11             0.71            0.76    LE0    RE0 
+        12             0.72            0.77    LE0    RE0 
+        13             0.72            0.78    LE0    RE0 
+        14             0.72            0.76    LE0    RE0 
+        15             0.71            0.75    LE0    RE0 
+   ------------------------------------------------------
+     time in cc_1den       cpu: 10 min 45 s  wall: 11 min 34 s  ratio:  0.9
+
+
+
+     +==========================================================+
+     |   contributions of excitation levels to excited states   |
+     |     wavefunctions as computed from the <L|R> overlap     |
+     +----------------------------------------------------------+
+     | sym | multi | state |    E / eV  | % singles | % doubles |
+     +==========================================================+
+     | a   |   1   |   1   |    3.63663 |   87.55   |   12.45   |
+     | a   |   1   |   2   |    3.75314 |   89.67   |   10.33   |
+     | a   |   1   |   3   |    4.56413 |   90.11   |    9.89   |
+     | a   |   1   |   4   |    4.59025 |   89.75   |   10.25   |
+     | a   |   1   |   5   |    5.23380 |   88.22   |   11.78   |
+     | a   |   1   |   6   |    5.74879 |   88.82   |   11.18   |
+     | a   |   1   |   7   |    5.75343 |   91.88   |    8.12   |
+     | a   |   1   |   8   |    5.98898 |   89.62   |   10.38   |
+     | a   |   1   |   9   |    6.40783 |   91.44   |    8.56   |
+     | a   |   1   |  10   |    6.64900 |   91.37   |    8.63   |
+     | a   |   1   |  11   |    6.79385 |   85.22   |   14.78   |
+     | a   |   1   |  12   |    6.94246 |   91.20   |    8.80   |
+     | a   |   1   |  13   |    6.99059 |   91.68   |    8.32   |
+     | a   |   1   |  14   |    7.32697 |   90.95   |    9.05   |
+     | a   |   1   |  15   |    7.35818 |   91.80   |    8.20   |
+     +==========================================================+
+
+
+
+
+   **************************************************************************
+   **************************************************************************
+   **                                                                      **
+   **          CALCULATION OF COUPLED CLUSTER RESPONSE PROPERTIES          **
+   **                                                                      **
+   **************************************************************************
+   **************************************************************************
+
+      The semi-canonical algorithm will be used for densities
+
+  === B matrix transformation for   15 state(s) ===
+
+
+                   ======== (gen.) F MATRIX MODULE  ========
+               calculating    15 L * B * R transformations
+
+
+                    ========   CC DENSITY MODULE   ========
+
+                      current wave-function model: MP2     
+
+  calculating CC ground state density
+
+   a semicanonical algorithm will be used
+
+    density nr.      cpu/min        wall/min    L     R
+   ------------------------------------------------------
+         1             0.72            0.84    L0     R0  
+   ------------------------------------------------------
+     time in cc_1den       cpu: 42.91 sec    wall: 50.73 sec    ratio:  0.8
+
+ reading orbital data $scfmo  from file mos . 
+
+ orbital characterization : scfconv=7
+ 
+ all orbitals will be active in the correlation treatment
+
+   EMP2            :     -491.426173063669
+   EMP2 from traces:     -491.426173063669
+   Delta           :        0.000000000000
+
+   --------------------------------------------------------------------------
+
+        Solving 4-Index ERI based CPHF equations using a RI-CPHF
+        preoptimization with a "cbas" type auxiliary basis
+
+
+ ======== LINEAR CC RESPONSE SOLVER ========
+
+    threshold for convergence: 0.10E-01
+    maximum number of simultaneous jacoby matrix transformations:  1
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : l0o
+     symmetry                      : a  
+     number of vectors requested   :     1
+     number of vectors generated   :     1
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+      1       1         0.35     0.70E+00  (  1)
+      2       1         0.33     0.31E+00  (  1)
+      3       1         0.30     0.12E+00  (  1)
+      4       1         0.27     0.59E-01  (  1)
+      5       1         0.29     0.19E-01  (  1)
+      6       1         0.28     0.79E-02  (  1)
+    --------------------------------------------
+    converged in  6 iterations
+
+         Total time          1.82 minutes
+
+
+ ===========================================
+
+
+
+
+ ======== LINEAR CC RESPONSE SOLVER ========
+
+    threshold for convergence: 0.10E-03
+    maximum number of simultaneous jacoby matrix transformations:  1
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : l0o
+     symmetry                      : a  
+     number of vectors requested   :     1
+     number of vectors generated   :     1
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+      1       1         1.46     0.79E-02  (  1)
+      2       1         1.47     0.31E-02  (  1)
+      3       1         1.46     0.21E-02  (  1)
+      4       1         1.49     0.73E-03  (  1)
+      5       1         1.48     0.38E-03  (  1)
+      6       1         1.49     0.14E-03  (  1)
+      7       1         1.49     0.38E-04  (  1)
+    --------------------------------------------
+    converged in  7 iterations
+
+         Total time         10.35 minutes
+
+
+ ===========================================
+
+
+   --------------------------------------------------------------------------
+ COSMO: write data to file cosmotransfer
+
+
+                    ========   CC DENSITY MODULE   ========
+
+                      current wave-function model: ADC(2)  
+
+  calculating    30 xi densities
+     and    15 xi type intermediate(s) for excited state gradient
+
+   a semicanonical algorithm will be used
+
+    density nr.      cpu/min        wall/min    L     R
+   ------------------------------------------------------
+         1             1.20            1.36    LE0    R0  
+         2             1.20            1.37    LE0    R0  
+         3             1.21            1.38    LE0    R0  
+         4             1.20            1.37    LE0    R0  
+         5             1.21            1.39    LE0    R0  
+         6             1.20            1.37    LE0    R0  
+         7             1.21            1.49    LE0    R0  
+         8             1.22            1.37    LE0    R0  
+         9             1.19            1.36    LE0    R0  
+        10             1.20            1.37    LE0    R0  
+        11             1.19            1.34    LE0    R0  
+        12             1.19            1.38    LE0    R0  
+        13             1.19            1.39    LE0    R0  
+        14             1.19            1.36    LE0    R0  
+        15             1.20            1.35    LE0    R0  
+        16             1.98            2.56    NL0    R0  
+        17             1.97            2.53    NL0    R0  
+        18             1.99            2.55    NL0    R0  
+        19             1.98            2.59    NL0    R0  
+        20             1.98            2.53    NL0    R0  
+        21             1.96            2.51    NL0    R0  
+        22             1.97            2.51    NL0    R0  
+        23             1.98            2.52    NL0    R0  
+        24             1.97            2.57    NL0    R0  
+        25             1.98            2.50    NL0    R0  
+        26             1.97            2.48    NL0    R0  
+        27             1.98            2.60    NL0    R0  
+        28             1.97            2.53    NL0    R0  
+        29             1.99            2.65    NL0    R0  
+        30             1.98            2.86    NL0    R0  
+   ------------------------------------------------------
+     time in cc_1den       cpu: 47 min 38 s  wall: 59 min  7 s  ratio:  0.8
+
+
+                    ========   CC DENSITY MODULE   ========
+
+                      current wave-function model: ADC(2)  
+
+  calculating    15 A densities
+     and    15 set of A type intermediate(s) for excited state gradient
+
+   a semicanonical algorithm will be used
+
+    density nr.      cpu/min        wall/min    L     R
+   ------------------------------------------------------
+ COSMO cphf update
+ COSMO cphf update
+         1             2.93            3.59    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         2             2.94            3.69    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         3             2.94            3.63    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         4             2.95            3.58    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         5             2.96            3.73    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         6             2.96            3.71    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         7             2.95            3.76    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         8             2.98            3.68    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+         9             2.95            3.69    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+        10             2.95            3.84    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+        11             2.96            3.87    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+        12             2.98            3.85    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+        13             2.98            3.83    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+        14             3.00            4.92    LE0    RE0 
+ COSMO cphf update
+ COSMO cphf update
+        15             2.99            3.78    LE0    RE0 
+   ------------------------------------------------------
+     time in cc_1den       cpu: 44 min 26 s  wall: 57 min  8 s  ratio:  0.8
+
+ reading orbital data $scfmo  from file mos . 
+
+ orbital characterization : scfconv=7
+ 
+ all orbitals will be active in the correlation treatment
+
+   EMP2+Excitation energy :     -491.292529314159
+   dto. calc. from traces :     -491.292529287924
+   Delta                  :       -0.000000026235
+
+
+   EMP2+Excitation energy :     -491.288247800241
+   dto. calc. from traces :     -491.288247800073
+   Delta                  :       -0.000000000168
+
+
+   EMP2+Excitation energy :     -491.258444545076
+   dto. calc. from traces :     -491.258444545085
+   Delta                  :        0.000000000010
+
+
+   EMP2+Excitation energy :     -491.257484606163
+   dto. calc. from traces :     -491.257484612074
+   Delta                  :        0.000000005911
+
+
+   EMP2+Excitation energy :     -491.233834360258
+   dto. calc. from traces :     -491.233834357583
+   Delta                  :       -0.000000002675
+
+
+   EMP2+Excitation energy :     -491.214908853146
+   dto. calc. from traces :     -491.214908854172
+   Delta                  :        0.000000001026
+
+
+   EMP2+Excitation energy :     -491.214738284644
+   dto. calc. from traces :     -491.214738284647
+   Delta                  :        0.000000000003
+
+
+   EMP2+Excitation energy :     -491.206082188534
+   dto. calc. from traces :     -491.206082184116
+   Delta                  :       -0.000000004418
+
+
+   EMP2+Excitation energy :     -491.190689721973
+   dto. calc. from traces :     -491.190689724514
+   Delta                  :        0.000000002541
+
+
+   EMP2+Excitation energy :     -491.181826821411
+   dto. calc. from traces :     -491.181826816168
+   Delta                  :       -0.000000005243
+
+
+   EMP2+Excitation energy :     -491.176503503680
+   dto. calc. from traces :     -491.176503503233
+   Delta                  :       -0.000000000448
+
+
+   EMP2+Excitation energy :     -491.171042360282
+   dto. calc. from traces :     -491.171042362871
+   Delta                  :        0.000000002589
+
+
+   EMP2+Excitation energy :     -491.169273754316
+   dto. calc. from traces :     -491.169273753483
+   Delta                  :       -0.000000000833
+
+
+   EMP2+Excitation energy :     -491.156911674630
+   dto. calc. from traces :     -491.156911675591
+   Delta                  :        0.000000000961
+
+
+   EMP2+Excitation energy :     -491.155764800977
+   dto. calc. from traces :     -491.155764801000
+   Delta                  :        0.000000000023
+
+   --------------------------------------------------------------------------
+
+        Solving 4-Index ERI based CPHF equations using a RI-CPHF
+        preoptimization with a "cbas" type auxiliary basis
+
+
+ ======== LINEAR CC RESPONSE SOLVER ========
+
+    threshold for convergence: 0.10E-01
+    maximum number of simultaneous jacoby matrix transformations: 15
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : l0o
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+      1      15         4.71     0.44E+00  (  6)
+      2      15         3.80     0.20E+00  (  6)
+      3      15         3.69     0.44E-01  (  6)
+      4      10         2.46     0.12E-01  (  6)
+      5       1         0.30     0.45E-02  ( 11)
+    --------------------------------------------
+    converged in  5 iterations
+
+         Total time         15.00 minutes
+
+
+ ===========================================
+
+
+
+
+ ======== LINEAR CC RESPONSE SOLVER ========
+
+    threshold for convergence: 0.10E-03
+    maximum number of simultaneous jacoby matrix transformations: 15
+                                                
+     summary of start vectors generation:
+     -------------------------------------------
+     type of solution vectors      : l0o
+     symmetry                      : a  
+     number of vectors requested   :    15
+     number of vectors generated   :    15
+       -- restarted from file      :    15
+     -------------------------------------------
+                                                
+
+    Iter  #Vectors  time (min)    max. residual 
+    --------------------------------------------
+      1      15         7.33     0.45E-02  ( 11)
+      2      15         7.40     0.17E-02  ( 11)
+      3      15         7.41     0.84E-03  ( 11)
+      4      15         7.42     0.20E-03  ( 11)
+      5       4         2.60     0.51E-04  (  6)
+    --------------------------------------------
+    converged in  5 iterations
+
+         Total time         32.19 minutes
+
+
+ ===========================================
+
+
+   --------------------------------------------------------------------------
+
+
+ **************************************************************
+ *                                                            *
+ *<<<<<<<<<<  GROUND STATE FIRST-ORDER PROPERTIES  >>>>>>>>>>>*
+ *                                                            *
+ **************************************************************
+
+
+
+        ------------------------------------------------
+            Method          :  MP2     
+            Total Energy    :   -491.4261730637
+            D1 diagnostic   :      0.0594
+        ------------------------------------------------
+
+
+        ------------------------------------------------
+                      moments of inertia 
+              453.587   2165.446   2618.794  in a.u.
+ 
+                     rotational constants 
+              0.13272    0.02780    0.02299  in cm**(-1)
+        ------------------------------------------------
+
+
+  NOTE: unrelaxed properties printed below refer to the MP1 wavefunction and
+        are only correct through first order in the fluctuation potential!
+
+ +===========================================================================+
+ | OPERATOR         | EXPECTAT. VALUE  | ELECTRONIC CONT. | NUCLEAR CONTRIB. |
+ +==================+==================+==================+==================+
+ |                  |                  |                  |                  |
+ | xdiplen  (unrel) |      4.02316151  |     92.15649897  |    -88.13333746  | 
+ | xdiplen  (relax) |      3.86232626  |     91.99566371  |    -88.13333746  | 
+ |                  |                  |                  |                  |
+ | ydiplen  (unrel) |     -0.00023168  |     -0.00021845  |     -0.00001323  | 
+ | ydiplen  (relax) |     -0.00025697  |     -0.00024375  |     -0.00001323  | 
+ |                  |                  |                  |                  |
+ | zdiplen  (unrel) |      0.20503770  |      1.72281093  |     -1.51777323  | 
+ | zdiplen  (relax) |      0.20123452  |      1.71900775  |     -1.51777323  | 
+ |                  |                  |                  |                  |
+ +===========================================================================+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      3.86232626
+     y     -0.00025697
+     z      0.20123452
+
+     | dipole moment | =      3.86756506 a.u. =      9.83036891 debye
+ 
+
+    --------------------------------------------------------------------------
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      4.02316151
+     y     -0.00023168
+     z      0.20503770
+
+     | dipole moment | =      4.02838293 a.u. =     10.23912713 debye
+ 
+ ==============================================================================
+                              MP2 COSMO RESULTS
+ ==============================================================================
+  PARAMETER:
+    nppa:      1082
+    nspa:        92
+    nsph:        32
+    nps:        667
+    npspher:    311
+    disex:   10.0000    
+    disex2:  4409.67    
+    rsolv [A]: 1.3000
+    routf:     0.8500
+    phsran:    0.0    
+    ampran:   0.10E-04
+    cavity:  closed
+    epsilon:    35.688
+    refind:     1.300
+    fepsi:      0.9585498
+  CAVITY VOLUME/AREA [a.u.]:
+    surface: V1.0, A matrix: V1.0
+    area:   572.85
+    volume:  1038.42
+  MP2 SCREENING CHARGE:
+    cosmo      :  -0.029786
+    correction :   0.028883
+    total      :  -0.000903
+  ELEMENT RADIUS [A]: ATOM LIST
+    c  2.00: 1-6
+    h  1.30: 7-10,15,16
+    n  1.83: 11,14
+    o  1.72: 12,13
+ ==============================================================================
+                            ITERATIVE COSMO MP2 STEP:  1
+ ==============================================================================
+ Convergence criteria:
+   tot. energy :         0.10000E-05
+   delta charge (max.):  0.10000E-04
+   delta charge (rms) :  0.10000E-05
+ Last change of cosmo screening charges:
+ rms :  0.40001E-04
+ max.: -0.14262E-03
+ ==============================================================================
+  Energy contributions:
+   SCF energy (incl. COSMO)                                -489.4223114226
+       dielectric energy(charges from corr. density):      -0.0223956180
+         outlying charge correction (OCC):                 -0.0003404760
+   correlation energy:                                     -2.0038616411
+       direct COSMO contribution (through F): (*)           0.0025831916
+       dto. for updated charges:                            0.0024973123
+
+  Total energies:
+   MP2-PTED energy (w/o OCC):     -491.4261812463 not conv.
+   MP2-PTED energy (with OCC):    -491.4265217223 not conv.
+
+   (*) energies in old rimp2 module differ due to neglect of a correction term
+
+       that has the negative value of this contribution (*)
+ ==============================================================================
+ Exporting ground state density
+
+
+ **************************************************************
+ *                                                            *
+ *<<<<<<<<<<<<  ONE-PHOTON ABSORPTION STRENGTHS  >>>>>>>>>>>>>*
+ *                                                            *
+ **************************************************************
+
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    1 a    1                          |
+  |    frequency :   0.1336438250 a.u.     3.63663 e.V.     29331.4 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -2.35992849 |     -2.35992849 |       5.56926250    |
+     | ydiplen   |     -0.00004531 |     -0.00004531 |       0.00000000    |
+     | zdiplen   |      0.01868161 |      0.01868161 |       0.00034900    |
+     | xdipvel   |     -0.37838013 |      0.37838013 |       0.14317152    |
+     | ydipvel   |      0.00000890 |     -0.00000890 |       0.00000000    |
+     | zdipvel   |      0.00446677 |     -0.00446677 |       0.00001995    |
+     | xangmom   |      0.00005688 |     -0.00005688 |       0.00000000    |
+     | yangmom   |     -0.01562694 |      0.01562694 |       0.00024420    |
+     | zangmom   |      0.00000972 |     -0.00000972 |       0.00000000    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.49622946
+       oscillator strength (velocity gauge) :      0.71429400
+       oscillator strength (mixed gauge)    :      0.59535566
+ 
+       rotator strength (length gauge)      :     -0.00006668 a.u.
+       Rotator strength (length gauge)      :     -0.03143413 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00008088 a.u.
+       Rotator strength (velocity gauge)    :     -0.03813251 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    2 a    1                          |
+  |    frequency :   0.1379252650 a.u.     3.75314 e.V.     30271.1 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |      0.00019185 |      0.00019185 |       0.00000004    |
+     | ydiplen   |      0.00010848 |      0.00010848 |       0.00000001    |
+     | zdiplen   |      0.00000310 |      0.00000310 |       0.00000000    |
+     | xdipvel   |      0.00004335 |     -0.00004335 |       0.00000000    |
+     | ydipvel   |      0.00002544 |     -0.00002544 |       0.00000000    |
+     | zdipvel   |      0.00000283 |     -0.00000283 |       0.00000000    |
+     | xangmom   |      0.57518681 |     -0.57518681 |       0.33083987    |
+     | yangmom   |      0.00001728 |     -0.00001728 |       0.00000000    |
+     | zangmom   |     -0.00094485 |      0.00094485 |       0.00000089    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00000000
+       oscillator strength (velocity gauge) :      0.00000001
+       oscillator strength (mixed gauge)    :      0.00000001
+ 
+       rotator strength (length gauge)      :      0.00005517 a.u.
+       Rotator strength (length gauge)      :      0.02601163 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :      0.00009038 a.u.
+       Rotator strength (velocity gauge)    :      0.04261140 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    3 a    1                          |
+  |    frequency :   0.1677285185 a.u.     4.56413 e.V.     36812.2 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |      0.00035400 |      0.00035400 |       0.00000013    |
+     | ydiplen   |      0.00004573 |      0.00004573 |       0.00000000    |
+     | zdiplen   |     -0.07237186 |     -0.07237186 |       0.00523769    |
+     | xdipvel   |      0.00006495 |     -0.00006495 |       0.00000000    |
+     | ydipvel   |      0.00001283 |     -0.00001283 |       0.00000000    |
+     | zdipvel   |     -0.01835121 |      0.01835121 |       0.00033677    |
+     | xangmom   |      0.00000029 |     -0.00000029 |       0.00000000    |
+     | yangmom   |     -1.15392053 |      1.15392053 |       1.33153258    |
+     | zangmom   |     -0.00019491 |      0.00019491 |       0.00000004    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00058569
+       oscillator strength (velocity gauge) :      0.00133856
+       oscillator strength (mixed gauge)    :      0.00088542
+ 
+       rotator strength (length gauge)      :     -0.00001933 a.u.
+       Rotator strength (length gauge)      :     -0.00911312 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00003347 a.u.
+       Rotator strength (velocity gauge)    :     -0.01577766 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    4 a    1                          |
+  |    frequency :   0.1686884442 a.u.     4.59025 e.V.     37022.8 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -0.00010094 |     -0.00010094 |       0.00000001    |
+     | ydiplen   |     -0.29705870 |     -0.29705870 |       0.08824387    |
+     | zdiplen   |     -0.00014999 |     -0.00014999 |       0.00000002    |
+     | xdipvel   |     -0.00003499 |      0.00003499 |       0.00000000    |
+     | ydipvel   |     -0.06198378 |      0.06198378 |       0.00384199    |
+     | zdipvel   |     -0.00005202 |      0.00005202 |       0.00000000    |
+     | xangmom   |      0.00648005 |     -0.00648005 |       0.00004199    |
+     | yangmom   |     -0.00004551 |      0.00004551 |       0.00000000    |
+     | zangmom   |      1.05390197 |     -1.05390197 |       1.11070936    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00992382
+       oscillator strength (velocity gauge) :      0.01518378
+       oscillator strength (mixed gauge)    :      0.01227522
+ 
+       rotator strength (length gauge)      :     -0.00007260 a.u.
+       Rotator strength (length gauge)      :     -0.03422876 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00015481 a.u.
+       Rotator strength (velocity gauge)    :     -0.07298331 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    5 a    1                          |
+  |    frequency :   0.1923387153 a.u.     5.23380 e.V.     42213.5 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |      0.00006731 |      0.00006731 |       0.00000000    |
+     | ydiplen   |      0.47792532 |      0.47792532 |       0.22841261    |
+     | zdiplen   |      0.00001501 |      0.00001501 |       0.00000000    |
+     | xdipvel   |      0.00002734 |     -0.00002734 |       0.00000000    |
+     | ydipvel   |      0.07162085 |     -0.07162085 |       0.00512955    |
+     | zdipvel   |     -0.00001174 |      0.00001174 |       0.00000000    |
+     | xangmom   |     -0.01130222 |      0.01130222 |       0.00012774    |
+     | yangmom   |     -0.00014338 |      0.00014338 |       0.00000002    |
+     | zangmom   |      0.46565101 |     -0.46565101 |       0.21683087    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.02928839
+       oscillator strength (velocity gauge) :      0.01777956
+       oscillator strength (mixed gauge)    :      0.02281961
+ 
+       rotator strength (length gauge)      :     -0.00003115 a.u.
+       Rotator strength (length gauge)      :     -0.01468443 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00004171 a.u.
+       Rotator strength (velocity gauge)    :     -0.01966593 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    6 a    1                          |
+  |    frequency :   0.2112642053 a.u.     5.74879 e.V.     46367.1 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -0.00012619 |     -0.00012619 |       0.00000002    |
+     | ydiplen   |     -1.41512967 |     -1.41512967 |       2.00259198    |
+     | zdiplen   |     -0.00026997 |     -0.00026997 |       0.00000007    |
+     | xdipvel   |     -0.00003766 |      0.00003766 |       0.00000000    |
+     | ydipvel   |     -0.35542231 |      0.35542231 |       0.12632502    |
+     | zdipvel   |      0.00000795 |     -0.00000795 |       0.00000000    |
+     | xangmom   |      0.00037361 |     -0.00037361 |       0.00000014    |
+     | yangmom   |     -0.00174556 |      0.00174556 |       0.00000305    |
+     | zangmom   |      1.53282228 |     -1.53282228 |       2.34954414    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.28205068
+       oscillator strength (velocity gauge) :      0.39863203
+       oscillator strength (mixed gauge)    :      0.33531244
+ 
+       rotator strength (length gauge)      :      0.00102816 a.u.
+       Rotator strength (length gauge)      :      0.48472075 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :      0.00149713 a.u.
+       Rotator strength (velocity gauge)    :      0.70581408 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    7 a    1                          |
+  |    frequency :   0.2114347811 a.u.     5.75343 e.V.     46404.6 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |      0.01242999 |      0.01242999 |       0.00015450    |
+     | ydiplen   |     -0.00832795 |     -0.00832795 |       0.00006935    |
+     | zdiplen   |      0.04048914 |      0.04048914 |       0.00163937    |
+     | xdipvel   |      0.00384576 |     -0.00384576 |       0.00001479    |
+     | ydipvel   |     -0.00208839 |      0.00208839 |       0.00000436    |
+     | zdipvel   |     -0.00316943 |      0.00316943 |       0.00001005    |
+     | xangmom   |      0.00012987 |     -0.00012987 |       0.00000002    |
+     | yangmom   |      0.29035019 |     -0.29035019 |       0.08430323    |
+     | zangmom   |      0.00914244 |     -0.00914244 |       0.00008358    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00026263
+       oscillator strength (velocity gauge) :      0.00009206
+       oscillator strength (mixed gauge)    :      0.00004209
+ 
+       rotator strength (length gauge)      :     -0.00102312 a.u.
+       Rotator strength (length gauge)      :     -0.48234313 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00150127 a.u.
+       Rotator strength (velocity gauge)    :     -0.70776448 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    8 a    1                          |
+  |    frequency :   0.2200908461 a.u.     5.98898 e.V.     48304.4 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -0.43033727 |     -0.43033727 |       0.18519016    |
+     | ydiplen   |     -0.00037053 |     -0.00037053 |       0.00000014    |
+     | zdiplen   |      0.02679636 |      0.02679636 |       0.00071804    |
+     | xdipvel   |     -0.12144646 |      0.12144646 |       0.01474924    |
+     | ydipvel   |     -0.00006491 |      0.00006491 |       0.00000000    |
+     | zdipvel   |      0.00801858 |     -0.00801858 |       0.00006430    |
+     | xangmom   |      0.00006945 |     -0.00006945 |       0.00000000    |
+     | yangmom   |     -0.04104373 |      0.04104373 |       0.00168459    |
+     | zangmom   |      0.00041112 |     -0.00041112 |       0.00000017    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.02727782
+       oscillator strength (velocity gauge) :      0.04487100
+       oscillator strength (mixed gauge)    :      0.03498522
+ 
+       rotator strength (length gauge)      :     -0.00000183 a.u.
+       Rotator strength (length gauge)      :     -0.00086307 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00000562 a.u.
+       Rotator strength (velocity gauge)    :     -0.00264922 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:    9 a    1                          |
+  |    frequency :   0.2354833302 a.u.     6.40783 e.V.     51682.6 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -0.01778300 |     -0.01778300 |       0.00031624    |
+     | ydiplen   |     -0.00012181 |     -0.00012181 |       0.00000001    |
+     | zdiplen   |      0.19406607 |      0.19406607 |       0.03766164    |
+     | xdipvel   |     -0.00704099 |      0.00704099 |       0.00004958    |
+     | ydipvel   |     -0.00002708 |      0.00002708 |       0.00000000    |
+     | zdipvel   |      0.05844596 |     -0.05844596 |       0.00341593    |
+     | xangmom   |     -0.00009120 |      0.00009120 |       0.00000001    |
+     | yangmom   |     -0.69298640 |      0.69298640 |       0.48023015    |
+     | zangmom   |     -0.00000392 |      0.00000392 |       0.00000000    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00596211
+       oscillator strength (velocity gauge) :      0.00981104
+       oscillator strength (mixed gauge)    :      0.00764506
+ 
+       rotator strength (length gauge)      :      0.00004264 a.u.
+       Rotator strength (length gauge)      :      0.02010040 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :      0.00004072 a.u.
+       Rotator strength (velocity gauge)    :      0.01919863 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:   10 a    1                          |
+  |    frequency :   0.2443462516 a.u.     6.64900 e.V.     53627.8 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |      0.00032909 |      0.00032909 |       0.00000011    |
+     | ydiplen   |      0.00296774 |      0.00296774 |       0.00000881    |
+     | zdiplen   |      0.00002418 |      0.00002418 |       0.00000000    |
+     | xdipvel   |      0.00007879 |     -0.00007879 |       0.00000001    |
+     | ydipvel   |      0.00157289 |     -0.00157289 |       0.00000247    |
+     | zdipvel   |      0.00001701 |     -0.00001701 |       0.00000000    |
+     | xangmom   |      0.29660769 |     -0.29660769 |       0.08797612    |
+     | yangmom   |     -0.00016148 |      0.00016148 |       0.00000003    |
+     | zangmom   |     -0.00075601 |      0.00075601 |       0.00000057    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00000145
+       oscillator strength (velocity gauge) :      0.00000677
+       oscillator strength (mixed gauge)    :      0.00000313
+ 
+       rotator strength (length gauge)      :      0.00004856 a.u.
+       Rotator strength (length gauge)      :      0.02289133 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :      0.00004727 a.u.
+       Rotator strength (velocity gauge)    :      0.02228697 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:   11 a    1                          |
+  |    frequency :   0.2496695554 a.u.     6.79385 e.V.     54796.1 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |      0.54968032 |      0.54968032 |       0.30214846    |
+     | ydiplen   |      0.00009225 |      0.00009225 |       0.00000001    |
+     | zdiplen   |      0.00730308 |      0.00730308 |       0.00005333    |
+     | xdipvel   |      0.10722162 |     -0.10722162 |       0.01149648    |
+     | ydipvel   |      0.00000710 |     -0.00000710 |       0.00000000    |
+     | zdipvel   |      0.00237159 |     -0.00237159 |       0.00000562    |
+     | xangmom   |     -0.00008819 |      0.00008819 |       0.00000001    |
+     | yangmom   |     -0.01606893 |      0.01606893 |       0.00025821    |
+     | zangmom   |     -0.00013322 |      0.00013322 |       0.00000002    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.05030039
+       oscillator strength (velocity gauge) :      0.03071286
+       oscillator strength (mixed gauge)    :      0.03930329
+ 
+       rotator strength (length gauge)      :     -0.00002546 a.u.
+       Rotator strength (length gauge)      :     -0.01200520 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00001980 a.u.
+       Rotator strength (velocity gauge)    :     -0.00933318 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:   12 a    1                          |
+  |    frequency :   0.2551307092 a.u.     6.94246 e.V.     55994.7 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -0.11738169 |     -0.11738169 |       0.01377846    |
+     | ydiplen   |     -0.00007127 |     -0.00007127 |       0.00000001    |
+     | zdiplen   |      0.05014419 |      0.05014419 |       0.00251444    |
+     | xdipvel   |     -0.03042036 |      0.03042036 |       0.00092540    |
+     | ydipvel   |     -0.00002972 |      0.00002972 |       0.00000000    |
+     | zdipvel   |      0.02048807 |     -0.02048807 |       0.00041976    |
+     | xangmom   |     -0.00018241 |      0.00018241 |       0.00000003    |
+     | yangmom   |      0.06376735 |     -0.06376735 |       0.00406628    |
+     | zangmom   |     -0.00001940 |      0.00001940 |       0.00000000    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00277121
+       oscillator strength (velocity gauge) :      0.00351496
+       oscillator strength (mixed gauge)    :      0.00306544
+ 
+       rotator strength (length gauge)      :      0.00000795 a.u.
+       Rotator strength (length gauge)      :      0.00374651 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :      0.00000638 a.u.
+       Rotator strength (velocity gauge)    :      0.00300867 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:   13 a    1                          |
+  |    frequency :   0.2568993086 a.u.     6.99059 e.V.     56382.9 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -1.88533125 |     -1.88533125 |       3.55447391    |
+     | ydiplen   |     -0.00044902 |     -0.00044902 |       0.00000020    |
+     | zdiplen   |      0.00688087 |      0.00688087 |       0.00004735    |
+     | xdipvel   |     -0.48719767 |      0.48719767 |       0.23736157    |
+     | ydipvel   |     -0.00017514 |      0.00017514 |       0.00000003    |
+     | zdipvel   |      0.00228717 |     -0.00228717 |       0.00000523    |
+     | xangmom   |     -0.00087602 |      0.00087602 |       0.00000077    |
+     | yangmom   |     -0.02373494 |      0.02373494 |       0.00056335    |
+     | zangmom   |     -0.00007118 |      0.00007118 |       0.00000001    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.60876940
+       oscillator strength (velocity gauge) :      0.61597891
+       oscillator strength (mixed gauge)    :      0.61236321
+ 
+       rotator strength (length gauge)      :      0.00083088 a.u.
+       Rotator strength (length gauge)      :      0.39171293 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :      0.00083844 a.u.
+       Rotator strength (velocity gauge)    :      0.39527782 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:   14 a    1                          |
+  |    frequency :   0.2692613866 a.u.     7.32697 e.V.     59096.0 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -0.05052711 |     -0.05052711 |       0.00255299    |
+     | ydiplen   |      0.00005376 |      0.00005376 |       0.00000000    |
+     | zdiplen   |      0.30171106 |      0.30171106 |       0.09102957    |
+     | xdipvel   |     -0.01479279 |      0.01479279 |       0.00021883    |
+     | ydipvel   |      0.00001375 |     -0.00001375 |       0.00000000    |
+     | zdipvel   |      0.09205894 |     -0.09205894 |       0.00847485    |
+     | xangmom   |      0.00022762 |     -0.00022762 |       0.00000005    |
+     | yangmom   |     -0.64552051 |      0.64552051 |       0.41669673    |
+     | zangmom   |     -0.00006094 |      0.00006094 |       0.00000000    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.01679878
+       oscillator strength (velocity gauge) :      0.02152475
+       oscillator strength (mixed gauge)    :      0.01901509
+ 
+       rotator strength (length gauge)      :     -0.00003229 a.u.
+       Rotator strength (length gauge)      :     -0.01522458 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00003315 a.u.
+       Rotator strength (velocity gauge)    :     -0.01562839 10^(-40)*erg*cm^3
+ 
+
+
+  +=========================================================================+
+  |  Transition                                             model: ADC(2)   |
+  |    number, symmetry, multiplicity:   15 a    1                          |
+  |    frequency :   0.2704082626 a.u.     7.35818 e.V.     59347.8 rcm     |
+  +=========================================================================+
+
+     +-----------+-----------------+-----------------+---------------------+
+     | operator  |   left moment   |  right moment   | transition strength |
+     +-----------+-----------------+-----------------+---------------------+
+     | xdiplen   |     -0.00104961 |     -0.00104961 |       0.00000110    |
+     | ydiplen   |     -0.00027531 |     -0.00027531 |       0.00000008    |
+     | zdiplen   |      0.00010126 |      0.00010126 |       0.00000001    |
+     | xdipvel   |     -0.00028114 |      0.00028114 |       0.00000008    |
+     | ydipvel   |      0.00012876 |     -0.00012876 |       0.00000002    |
+     | zdipvel   |      0.00003157 |     -0.00003157 |       0.00000000    |
+     | xangmom   |      0.82787132 |     -0.82787132 |       0.68537092    |
+     | yangmom   |     -0.00006833 |      0.00006833 |       0.00000000    |
+     | zangmom   |     -0.00599084 |      0.00599084 |       0.00003589    |
+     +-----------+-----------------+-----------------+---------------------+
+ 
+       oscillator strength (length gauge)   :      0.00000021
+       oscillator strength (velocity gauge) :      0.00000024
+       oscillator strength (mixed gauge)    :      0.00000018
+ 
+       rotator strength (length gauge)      :     -0.00043477 a.u.
+       Rotator strength (length gauge)      :     -0.20496735 10^(-40)*erg*cm^3
+       rotator strength (velocity gauge)    :     -0.00043072 a.u.
+       Rotator strength (velocity gauge)    :     -0.20306224 10^(-40)*erg*cm^3
+ 
+ Exporting transition densities
+
+
+ *************************************************************
+ *                                                           *
+ *<<<<<<<<<<<<<<<  EXCITED STATE PROPERTIES  >>>>>>>>>>>>>>>>*
+ *                                                           *
+ *************************************************************
+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    1 a    1                          |
+  |    frequency :   0.1336438250 a.u.     3.63663 e.V.     29331.4 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2925292387
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      7.81327332 |     95.94661078 |      3.79011180 |
+   | xdiplen (relax) |      6.99700867 |     95.13034613 |       ---       |
+   | ydiplen (unrel) |     -0.00026883 |     -0.00025560 |     -0.00003715 |
+   | ydiplen (relax) |     -0.00024471 |     -0.00023148 |       ---       |
+   | zdiplen (unrel) |      0.17808935 |      1.69586258 |     -0.02694835 |
+   | zdiplen (relax) |      0.18331192 |      1.70108515 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      6.99700867
+     y     -0.00024471
+     z      0.18331192
+
+     | dipole moment | =      6.99940952 a.u. =     17.79072276 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      7.81327332
+     y     -0.00026883
+     z      0.17808935
+
+     | dipole moment | =      7.81530267 a.u. =     19.86451609 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.29581449  |
+ | E_x_(y) (+OCC)                  |  -491.29637910  |
+ | Outlying charge correction(OCC) |    -0.00056461  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.13364382  |
+ | Correction for fast part of RF  |    -0.00370095  |
+ | Correction for update of eq. RF |     0.00042388  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    2 a    1                          |
+  |    frequency :   0.1379252650 a.u.     3.75314 e.V.     30271.1 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2882477986
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      2.72313066 |     90.85646812 |     -1.30003085 |
+   | xdiplen (relax) |      3.18427418 |     91.31761164 |       ---       |
+   | ydiplen (unrel) |     -0.00027010 |     -0.00025687 |     -0.00003842 |
+   | ydiplen (relax) |     -0.00025966 |     -0.00024643 |       ---       |
+   | zdiplen (unrel) |      0.20901714 |      1.72679037 |      0.00397944 |
+   | zdiplen (relax) |      0.20421709 |      1.72199032 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      3.18427418
+     y     -0.00025966
+     z      0.20421709
+
+     | dipole moment | =      3.19081600 a.u. =      8.11024454 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      2.72313066
+     y     -0.00027010
+     z      0.20901714
+
+     | dipole moment | =      2.73114058 a.u. =      6.94186626 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.28878726  |
+ | E_x_(y) (+OCC)                  |  -491.28912727  |
+ | Outlying charge correction(OCC) |    -0.00034002  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.13792527  |
+ | Correction for fast part of RF  |    -0.00040716  |
+ | Correction for update of eq. RF |    -0.00012412  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    3 a    1                          |
+  |    frequency :   0.1677285185 a.u.     4.56413 e.V.     36812.2 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2584445452
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      2.78911912 |     90.92245657 |     -1.23404240 |
+   | xdiplen (relax) |      3.18083611 |     91.31417357 |       ---       |
+   | ydiplen (unrel) |     -0.00024697 |     -0.00023374 |     -0.00001529 |
+   | ydiplen (relax) |     -0.00024998 |     -0.00023676 |       ---       |
+   | zdiplen (unrel) |      0.20893429 |      1.72670752 |      0.00389659 |
+   | zdiplen (relax) |      0.20423848 |      1.72201171 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      3.18083611
+     y     -0.00024998
+     z      0.20423848
+
+     | dipole moment | =      3.18738635 a.u. =      8.10152724 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      2.78911912
+     y     -0.00024697
+     z      0.20893429
+
+     | dipole moment | =      2.79693386 a.u. =      7.10909610 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.25912345  |
+ | E_x_(y) (+OCC)                  |  -491.25948386  |
+ | Outlying charge correction(OCC) |    -0.00036041  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.16772852  |
+ | Correction for fast part of RF  |    -0.00052375  |
+ | Correction for update of eq. RF |    -0.00014697  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    4 a    1                          |
+  |    frequency :   0.1686884442 a.u.     4.59025 e.V.     37022.8 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2574846195
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      4.95509213 |     93.08842959 |      0.93193061 |
+   | xdiplen (relax) |      4.36894854 |     92.50228600 |       ---       |
+   | ydiplen (unrel) |     -0.00039244 |     -0.00037921 |     -0.00016076 |
+   | ydiplen (relax) |     -0.00039392 |     -0.00038069 |       ---       |
+   | zdiplen (unrel) |      0.18520183 |      1.70297505 |     -0.01983588 |
+   | zdiplen (relax) |      0.18749831 |      1.70527154 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      4.36894854
+     y     -0.00039392
+     z      0.18749831
+
+     | dipole moment | =      4.37297006 a.u. =     11.11498016 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      4.95509213
+     y     -0.00039244
+     z      0.18520183
+
+     | dipole moment | =      4.95855199 a.u. =     12.60338083 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.25767105  |
+ | E_x_(y) (+OCC)                  |  -491.25803026  |
+ | Outlying charge correction(OCC) |    -0.00035921  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.16868844  |
+ | Correction for fast part of RF  |    -0.00022028  |
+ | Correction for update of eq. RF |     0.00004204  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    5 a    1                          |
+  |    frequency :   0.1923387153 a.u.     5.23380 e.V.     42213.5 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2338343483
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      6.13089453 |     94.26423199 |      2.10773302 |
+   | xdiplen (relax) |      5.62061292 |     93.75395038 |       ---       |
+   | ydiplen (unrel) |     -0.00013391 |     -0.00012068 |      0.00009777 |
+   | ydiplen (relax) |     -0.00020577 |     -0.00019255 |       ---       |
+   | zdiplen (unrel) |      0.19281441 |      1.71058764 |     -0.01222330 |
+   | zdiplen (relax) |      0.19241864 |      1.71019187 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      5.62061292
+     y     -0.00020577
+     z      0.19241864
+
+     | dipole moment | =      5.62390563 a.u. =     14.29454093 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      6.13089453
+     y     -0.00013391
+     z      0.19281441
+
+     | dipole moment | =      6.13392576 a.u. =     15.59088266 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.23493587  |
+ | E_x_(y) (+OCC)                  |  -491.23538132  |
+ | Outlying charge correction(OCC) |    -0.00044546  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.19233872  |
+ | Correction for fast part of RF  |    -0.00137910  |
+ | Correction for update of eq. RF |     0.00028576  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    6 a    1                          |
+  |    frequency :   0.2112642053 a.u.     5.74879 e.V.     46367.1 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2149088583
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      3.49253423 |     91.62587168 |     -0.53062729 |
+   | xdiplen (relax) |      4.13325732 |     92.26659478 |       ---       |
+   | ydiplen (unrel) |     -0.00029611 |     -0.00028288 |     -0.00006443 |
+   | ydiplen (relax) |     -0.00031467 |     -0.00030144 |       ---       |
+   | zdiplen (unrel) |      0.20489966 |      1.72267289 |     -0.00013804 |
+   | zdiplen (relax) |      0.19987353 |      1.71764676 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      4.13325732
+     y     -0.00031467
+     z      0.19987353
+
+     | dipole moment | =      4.13808719 a.u. =     10.51796752 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      3.49253423
+     y     -0.00029611
+     z      0.20489966
+
+     | dipole moment | =      3.49853959 a.u. =      8.89239981 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.21492174  |
+ | E_x_(y) (+OCC)                  |  -491.21528165  |
+ | Outlying charge correction(OCC) |    -0.00035991  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.21126421  |
+ | Correction for fast part of RF  |    -0.00003734  |
+ | Correction for update of eq. RF |     0.00003264  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    7 a    1                          |
+  |    frequency :   0.2114347811 a.u.     5.75343 e.V.     46404.6 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2147382826
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      3.14908909 |     91.28242655 |     -0.87407242 |
+   | xdiplen (relax) |      2.80628699 |     90.93962445 |       ---       |
+   | ydiplen (unrel) |     -0.00099309 |     -0.00097986 |     -0.00076141 |
+   | ydiplen (relax) |     -0.00088786 |     -0.00087463 |       ---       |
+   | zdiplen (unrel) |      0.10140232 |      1.61917555 |     -0.10363538 |
+   | zdiplen (relax) |      0.11357664 |      1.63134987 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      2.80628699
+     y     -0.00088786
+     z      0.11357664
+
+     | dipole moment | =      2.80858454 a.u. =      7.13870916 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      3.14908909
+     y     -0.00099309
+     z      0.10140232
+
+     | dipole moment | =      3.15072143 a.u. =      8.00833430 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.21549240  |
+ | E_x_(y) (+OCC)                  |  -491.21618371  |
+ | Outlying charge correction(OCC) |    -0.00069131  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.21143478  |
+ | Correction for fast part of RF  |    -0.00070438  |
+ | Correction for update of eq. RF |    -0.00004155  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    8 a    1                          |
+  |    frequency :   0.2200908461 a.u.     5.98898 e.V.     48304.4 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.2060822175
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      5.68341848 |     93.81675594 |      1.66025697 |
+   | xdiplen (relax) |      5.25829460 |     93.39163206 |       ---       |
+   | ydiplen (unrel) |     -0.00015235 |     -0.00013912 |      0.00007933 |
+   | ydiplen (relax) |     -0.00013932 |     -0.00012609 |       ---       |
+   | zdiplen (unrel) |      0.15865227 |      1.67642550 |     -0.04638543 |
+   | zdiplen (relax) |      0.16689933 |      1.68467255 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      5.25829460
+     y     -0.00013932
+     z      0.16689933
+
+     | dipole moment | =      5.26094265 a.u. =     13.37198114 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      5.68341848
+     y     -0.00015235
+     z      0.15865227
+
+     | dipole moment | =      5.68563244 a.u. =     14.45143480 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.20684005  |
+ | E_x_(y) (+OCC)                  |  -491.20719166  |
+ | Outlying charge correction(OCC) |    -0.00035160  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.22009085  |
+ | Correction for fast part of RF  |    -0.00088600  |
+ | Correction for update of eq. RF |     0.00013635  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:    9 a    1                          |
+  |    frequency :   0.2354833302 a.u.     6.40783 e.V.     51682.6 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.1906897335
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      4.29628241 |     92.42961987 |      0.27312090 |
+   | xdiplen (relax) |      3.77275843 |     91.90609589 |       ---       |
+   | ydiplen (unrel) |     -0.00052951 |     -0.00051628 |     -0.00029783 |
+   | ydiplen (relax) |     -0.00051011 |     -0.00049688 |       ---       |
+   | zdiplen (unrel) |      0.09563587 |      1.61340910 |     -0.10940183 |
+   | zdiplen (relax) |      0.10847860 |      1.62625182 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      3.77275843
+     y     -0.00051011
+     z      0.10847860
+
+     | dipole moment | =      3.77431769 a.u. =      9.59335777 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      4.29628241
+     y     -0.00052951
+     z      0.09563587
+
+     | dipole moment | =      4.29734675 a.u. =     10.92276489 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.19193549  |
+ | E_x_(y) (+OCC)                  |  -491.19261484  |
+ | Outlying charge correction(OCC) |    -0.00067935  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.23548333  |
+ | Correction for fast part of RF  |    -0.00133754  |
+ | Correction for update of eq. RF |     0.00009996  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:   10 a    1                          |
+  |    frequency :   0.2443462516 a.u.     6.64900 e.V.     53627.8 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.1818268121
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      3.81469412 |     91.94803158 |     -0.20846739 |
+   | xdiplen (relax) |      3.36852208 |     91.50185954 |       ---       |
+   | ydiplen (unrel) |      0.00222816 |      0.00224139 |      0.00245984 |
+   | ydiplen (relax) |      0.00198098 |      0.00199421 |       ---       |
+   | zdiplen (unrel) |      0.13394070 |      1.65171392 |     -0.07109701 |
+   | zdiplen (relax) |      0.14201416 |      1.65978739 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      3.36852208
+     y      0.00198098
+     z      0.14201416
+
+     | dipole moment | =      3.37151494 a.u. =      8.56953537 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      3.81469412
+     y      0.00222816
+     z      0.13394070
+
+     | dipole moment | =      3.81704549 a.u. =      9.70196099 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.18433182  |
+ | E_x_(y) (+OCC)                  |  -491.18652477  |
+ | Outlying charge correction(OCC) |    -0.00219295  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.24434625  |
+ | Correction for fast part of RF  |    -0.00250515  |
+ | Correction for update of eq. RF |     0.00000833  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:   11 a    1                          |
+  |    frequency :   0.2496695554 a.u.     6.79385 e.V.     54796.1 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.1765035082
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      7.29490929 |     95.42824675 |      3.27174778 |
+   | xdiplen (relax) |      6.72254020 |     94.85587766 |       ---       |
+   | ydiplen (unrel) |     -0.00011887 |     -0.00010564 |      0.00011281 |
+   | ydiplen (relax) |     -0.00018696 |     -0.00017374 |       ---       |
+   | zdiplen (unrel) |      0.17951840 |      1.69729162 |     -0.02551931 |
+   | zdiplen (relax) |      0.18694637 |      1.70471960 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      6.72254020
+     y     -0.00018696
+     z      0.18694637
+
+     | dipole moment | =      6.72513909 a.u. =     17.09359691 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      7.29490929
+     y     -0.00011887
+     z      0.17951840
+
+     | dipole moment | =      7.29711782 a.u. =     18.54742169 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.17935461  |
+ | E_x_(y) (+OCC)                  |  -491.17989456  |
+ | Outlying charge correction(OCC) |    -0.00053995  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.24966956  |
+ | Correction for fast part of RF  |    -0.00326686  |
+ | Correction for update of eq. RF |     0.00042394  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:   12 a    1                          |
+  |    frequency :   0.2551307092 a.u.     6.94246 e.V.     55994.7 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.1710423544
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      5.29513782 |     93.42847528 |      1.27197631 |
+   | xdiplen (relax) |      4.72550721 |     92.85884467 |       ---       |
+   | ydiplen (unrel) |     -0.00260772 |     -0.00259450 |     -0.00237604 |
+   | ydiplen (relax) |     -0.00237082 |     -0.00235759 |       ---       |
+   | zdiplen (unrel) |      0.15812811 |      1.67590134 |     -0.04690959 |
+   | zdiplen (relax) |      0.16266104 |      1.68043427 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      4.72550721
+     y     -0.00237082
+     z      0.16266104
+
+     | dipole moment | =      4.72830653 a.u. =     12.01815529 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      5.29513782
+     y     -0.00260772
+     z      0.15812811
+
+     | dipole moment | =      5.29749902 a.u. =     13.46489815 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.17303889  |
+ | E_x_(y) (+OCC)                  |  -491.17484843  |
+ | Outlying charge correction(OCC) |    -0.00180954  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.25513071  |
+ | Correction for fast part of RF  |    -0.00196668  |
+ | Correction for update of eq. RF |    -0.00002167  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:   13 a    1                          |
+  |    frequency :   0.2568993086 a.u.     6.99059 e.V.     56382.9 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.1692737551
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      4.14998026 |     92.28331772 |      0.12681875 |
+   | xdiplen (relax) |      3.73327877 |     91.86661623 |       ---       |
+   | ydiplen (unrel) |     -0.00081005 |     -0.00079683 |     -0.00057837 |
+   | ydiplen (relax) |     -0.00057881 |     -0.00056558 |       ---       |
+   | zdiplen (unrel) |      0.20865077 |      1.72642400 |      0.00361307 |
+   | zdiplen (relax) |      0.20710231 |      1.72487554 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      3.73327877
+     y     -0.00057881
+     z      0.20710231
+
+     | dipole moment | =      3.73901886 a.u. =      9.50363710 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      4.14998026
+     y     -0.00081005
+     z      0.20865077
+
+     | dipole moment | =      4.15522225 a.u. =     10.56152050 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.16938761  |
+ | E_x_(y) (+OCC)                  |  -491.16974538  |
+ | Outlying charge correction(OCC) |    -0.00035777  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.25689931  |
+ | Correction for fast part of RF  |    -0.00010680  |
+ | Correction for update of eq. RF |     0.00000114  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:   14 a    1                          |
+  |    frequency :   0.2692613866 a.u.     7.32697 e.V.     59096.0 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.1569116770
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      7.70153882 |     95.83487628 |      3.67837731 |
+   | xdiplen (relax) |      6.99273207 |     95.12606953 |       ---       |
+   | ydiplen (unrel) |      0.00004222 |      0.00005544 |      0.00027390 |
+   | ydiplen (relax) |      0.00001578 |      0.00002900 |       ---       |
+   | zdiplen (unrel) |      0.11173584 |      1.62950907 |     -0.09330186 |
+   | zdiplen (relax) |      0.11936959 |      1.63714282 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      6.99273207
+     y      0.00001578
+     z      0.11936959
+
+     | dipole moment | =      6.99375085 a.u. =     17.77633985 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      7.70153882
+     y      0.00004222
+     z      0.11173584
+
+     | dipole moment | =      7.70234933 a.u. =     19.57741735 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.15978000  |
+ | E_x_(y) (+OCC)                  |  -491.16177600  |
+ | Outlying charge correction(OCC) |    -0.00199600  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.26926139  |
+ | Correction for fast part of RF  |    -0.00324488  |
+ | Correction for update of eq. RF |     0.00038474  |
+ +---------------------------------+-----------------+
+
+
+  +=========================================================================+
+  |  Excited state reached by transition:                   model: ADC(2)   |
+  |    number, symmetry, multiplicity:   15 a    1                          |
+  |    frequency :   0.2704082626 a.u.     7.35818 e.V.     59347.8 rcm     |
+  +=========================================================================+
+
+      Total energy of excited state:    -491.1557648010
+
+   +-----------------+-----------------+-----------------+-----------------+
+   | operator        | expect. value   | electr. contrib.| diff to gr.st.  |
+   +-----------------+-----------------+-----------------+-----------------+
+   | xdiplen (unrel) |      4.95341538 |     93.08675284 |      0.93025387 |
+   | xdiplen (relax) |      4.53188494 |     92.66522240 |       ---       |
+   | ydiplen (unrel) |     -0.00019629 |     -0.00018306 |      0.00003539 |
+   | ydiplen (relax) |     -0.00021888 |     -0.00020565 |       ---       |
+   | zdiplen (unrel) |      0.16961030 |      1.68738353 |     -0.03542740 |
+   | zdiplen (relax) |      0.16964111 |      1.68741434 |       ---       |
+   +-----------------+-----------------+-----------------+-----------------+
+
+
+     Analysis of relaxed properties:
+     ===============================
+
+
+     dipole moment:
+     --------------
+
+     x      4.53188494
+     y     -0.00021888
+     z      0.16964111
+
+     | dipole moment | =      4.53505891 a.u. =     11.52696887 debye
+ 
+
+
+     Analysis of unrelaxed properties:
+     =================================
+
+
+     dipole moment:
+     --------------
+
+     x      4.95341538
+     y     -0.00019629
+     z      0.16961030
+
+     | dipole moment | =      4.95631835 a.u. =     12.59770348 debye
+ 
+
+ +---------------------------------+-----------------+
+ |   Nonequilibrium solvation      |                 |
+ +---------------------------------+-----------------+
+ |   E_x_(y) is the total free energy of target      |
+ |   state x in the reaction field (RF)              |
+ |   equilibrated for state y                        |
+ +---------------------------------+-----------------+
+ | E_x_(y)                         |  -491.15650592  |
+ | E_x_(y) (+OCC)                  |  -491.15661258  |
+ | Outlying charge correction(OCC) |    -0.00010666  |
+ | E_SCF with RF of state y        |  -489.42231961  |
+ | E_corr (ground state)           |    -2.00386164  |
+ | E_exci (ground to x state)      |     0.27040826  |
+ | Correction for fast part of RF  |    -0.00083429  |
+ | Correction for update of eq. RF |     0.00010135  |
+ +---------------------------------+-----------------+
+ Exporting excited state densities
+
+
+ =============================================
+ | SUMMARY OF RELAXED EXCITATIONS WITH COSMO |
+ =============================================
+
+ Explanation of the quantities below:
+
+       E(diff)_x = E_x - E*_y
+       E(exci)_x = E_x - E_gs
+
+  E_x  : noneq.        energy of state x
+  E*_y : eq.           energy of state y
+  E_gs : noneq. or eq. energy of groundstate
+  OCC  : outlying charge correction
+
+ The * in column 'sym' marks the equilibrated state
+
+ +=================================================================================+
+ | sym | multi | state | COSMO-ADC(2) energy differences                           |
+ |     |       |       +-----------------------------------------------------------+
+ |     |       |       | E(Total)/au. |  E(diff)/eV  |  E(exci)/eV  |E(exc(OCC))/eV|
+ +=================================================================================+
+ |*a   |   1   |   0   | -491.4261812 |            - |            - |            - |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   1   | -491.2958145 |      3.54746 |      3.54746 |      3.54136 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   2   | -491.2887873 |      3.73868 |      3.73868 |      3.73869 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   3   | -491.2591235 |      4.54587 |      4.54587 |      4.54533 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   4   | -491.2576710 |      4.58540 |      4.58540 |      4.58489 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   5   | -491.2349359 |      5.20405 |      5.20405 |      5.20119 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   6   | -491.2149217 |      5.74866 |      5.74866 |      5.74813 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   7   | -491.2154924 |      5.73314 |      5.73314 |      5.72359 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   8   | -491.2068401 |      5.96858 |      5.96858 |      5.96827 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |   9   | -491.1919355 |      6.37415 |      6.37415 |      6.36493 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |  10   | -491.1843318 |      6.58106 |      6.58106 |      6.53065 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |  11   | -491.1793546 |      6.71649 |      6.71649 |      6.71107 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |  12   | -491.1730389 |      6.88835 |      6.88835 |      6.84838 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |  13   | -491.1693876 |      6.98771 |      6.98771 |      6.98724 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |  14   | -491.1597800 |      7.24915 |      7.24915 |      7.20410 |
+ +-----+-------+-------+--------------+--------------+--------------+--------------+
+ | a   |   1   |  15   | -491.1565059 |      7.33824 |      7.33824 |      7.34460 |
+ +=================================================================================+
+
+
+
+    ------------------------------------------------------------------------
+         total  cpu-time :  6 hours 49 minutes and  8 seconds
+         total wall-time :  8 hours 48 minutes and 23 seconds
+    ------------------------------------------------------------------------
+
+
+   ****  ricc2 : all done  ****
+
+
+    2023-02-13 19:43:43.948 
+
