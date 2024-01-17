@@ -7,3 +7,5 @@ It also contains two Excel files respectively with the NTO and CT parameters (Th
 We hope our work will help you in any way possible and feel free to contact us.
 
 From the Theoretical Chemistry Group at the Military Institute of Engineering (Rio de Janeiro, Brazil), we wish you all the best.
+
+[![DOI](https://zenodo.org/badge/744630249.svg)](https://zenodo.org/doi/10.5281/zenodo.10524944)
