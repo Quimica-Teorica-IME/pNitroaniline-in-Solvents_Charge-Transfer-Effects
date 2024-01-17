@@ -1,0 +1,13 @@
+rtype='ricc2'
+rfile='ricc2.log'
+read_binary=True
+mo_file='molden.input'
+at_lists=[[11, 12, 13], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [14, 15, 16]]
+Om_formula=2
+eh_pop=1
+comp_ntos=False
+comp_dntos=False
+comp_ntos=False
+comp_rho0n=False
+prop_list=['Om', 'POSi', 'POSf', 'PR', 'CT', 'MC', 'LC', 'MLCT', 'LMCT', 'LLCT', 'RMSeh']
+output_file='summ.txt'
