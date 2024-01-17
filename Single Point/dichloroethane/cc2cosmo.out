@@ -1,0 +1,30 @@
+------------------------------------------------------
+\n      This is cc2cosmo  Tue Mar 21 19:16:55 CET 2023\n
+------------------------------------------------------
+
+       Using: /apps/software/Turbomole/6.6/bin/em64t-unknown-linux-gnu/dscf
+       Using: /apps/software/Turbomole/6.6/bin/em64t-unknown-linux-gnu/ricc2
+       ccf/cosmo file: out(__mp2).ccf
+       Saving output files of all cycles
+       Max. cycles: 15
+       Convergence crit:
+          energy: 10**-6
+          charges (RMS): 10**-6
+          charges (max): 10**-5
+cyc: 0
+       Start: first full relaxed cosmo dscf
+       Start: ricc2
+       Start cycle with frozen cc2 charges
+cyc: 1
+       dscf
+       ricc2
+cyc: 2
+       dscf
+       ricc2
+cyc: 3
+       dscf
+       ricc2
+cyc: 4
+       dscf
+       ricc2
+ --- calculation converged --- 
