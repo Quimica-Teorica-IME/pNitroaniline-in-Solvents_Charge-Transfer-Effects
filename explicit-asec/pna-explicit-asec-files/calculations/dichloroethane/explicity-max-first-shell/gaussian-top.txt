@@ -1,0 +1,7 @@
+%nprocshared=4
+%mem=8GB
+#P pop=chelpg cam-b3lyp/gen scf=qc int=ultrafine charge td(nstates=10)
+
+pNA CAM-B3LYP def2-TZVPD Single point - solvent def2-SV(P)
+
+0 1

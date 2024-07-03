@@ -1,0 +1,20 @@
+ljname = pna-dce.txt         
+inname = pna-dce.1.xyz
+nmol = 1 490
+dens = 0
+cm = -1
+normcharge = 100
+printconfig = yes
+printformat = 3
+topfile = gaussian-top.txt
+#botfile = gaussian-bot-full.txt
+#midfile = gaussian-bot-full.txt
+printdummy = no
+molprint = 6 240
+printinterval = 1
+freeze = 1, 2, 3
+angle = no
+hbond = no
+$end
+
+
