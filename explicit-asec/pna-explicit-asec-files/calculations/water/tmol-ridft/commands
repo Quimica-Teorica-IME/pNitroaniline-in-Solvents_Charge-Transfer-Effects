@@ -1,0 +1,66 @@
+#asec from dice to turbomole
+x2t pna-wat_all.xyz > pna-wat_all.tmol
+grep -v c pna-wat_all.tmol | grep -v h | grep -v n | grep -v o > solvent.tmol
+
+
+
+#pointcharges
+echo '$point_charges nocheck' > pointcharges
+cat solvent.tmol | awk  '{if( NR%3 == 1) ch="-0.008476" ;else  ch="0.004238"  ; printf "%9.5f  %9.5f %9.5f  %9.6f\n", $1,$2,$3,ch}' >> pointcharges
+echo "\$end" >> pointcharges
+
+
+# coordinates of solvent
+head pna-wat_all.tmol -n17 > coord
+echo "\$end " >> coord
+
+
+#org files
+mkdir adc2
+cp coord pointcharges adc2
+
+#execute define
+define >define.out 2>&1 <<EOF
+
+        
+        
+a coord
+*
+no
+b all SV
+bl
+
+*
+eht
+
+
+
+scf
+iter
+300
+
+
+ri
+on
+m
+1200
+jbas
+bl
+*
+
+dft
+func pbe
+on
+
+
+marij
+
+*
+*
+*
+EOF
+
+
+
+sed -i '/file=basis/a $point_charges nocheck file=pointcharges' control
+sed -i '/file=basis/a $point_charges nocheck file=pointcharges' control
