@@ -1,0 +1,112 @@
+$title
+$operating system unix
+$symmetry c1
+$coord    file=coord
+$user-defined bonds    file=coord
+$atoms
+c  1-6                                                                         \
+   basis =c def2-TZVPD                                                         \
+   cbas  =c def2-TZVPD
+h  7-10,15-16                                                                  \
+   basis =h def2-TZVPD                                                         \
+   cbas  =h def2-TZVPD
+n  11,14                                                                       \
+   basis =n def2-TZVPD                                                         \
+   cbas  =n def2-TZVPD
+o  12-13                                                                       \
+   basis =o def2-TZVPD                                                         \
+   cbas  =o def2-TZVPD
+o  17,20,23,26,29,32,35,38,41,44,47,50,53,56,59,62,65                          \
+   basis =o def-SV(P)                                                          \
+   cbas  =o def-SV(P)
+h  18-19,21-22,24-25,27-28,30-31,33-34,36-37,39-40,42-43,45-46,48-49,51-52,    \
+   54-55,57-58,60-61,63-64,66-67                                               \
+   basis =h def-SV(P)                                                          \
+   cbas  =h def-SV(P)
+$basis    file=basis
+$point_charges nocheck file=pointcharges
+$rundimensions
+   dim(fock,dens)=332280
+   natoms=67
+   nshell=332
+   nbf(CAO)=813
+   nbf(AO)=736
+   dim(trafo[SAO<-->AO/CAO])=967
+   rhfshells=1
+   nt1amt=57810
+$scfmo   file=mos
+$closed shells
+ a       1-121                                  ( 2 )
+$scfiterlimit      300
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$optimize
+   internal   off
+   cartesian  on
+   global     off
+   basis      off   logarithm
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$lock off
+$maxcor      500
+$denconv     0.10000000E-06
+$freeze
+ implicit core=   27 virt=    0
+$cbas    file=auxbasis
+$ricc2
+  adc(2)
+$excitations
+  irrep=a  multiplicity=  1  nexc= 10  npre=  0  nstart=  0
+  spectrum  states=all  operators=diplen,dipvel,angmom
+$last step     ricc2
+$orbital_max_rnorm 0.14985244074744E-04
+$last SCF energy change = -1780.9505
+$charge from dscf
+         -0.000 (not to be modified here)
+$dipole from dscf
+  x     2.89238862440771    y   -63.10732244830589    z   -12.38585534508223    a.u.
+   | dipole | =  163.6294989552  debye
+$excitation_energies_CCS_____1^a___ file=exstates
+$excitation_energies_ADC(2)__1^a___ file=exstates
+$t2_norm_of_re0_ADC(2)__1^a___ file=exstates
+$<le0|re0>-overlap_ADC(2)__1^a___ file=exstates
+$<le01|re01>-overlap_ADC(2)__1^a___ file=exstates
+$<le02|re02>-overlap_ADC(2)__1^a___ file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____1 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____2 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____3 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____4 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____5 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____6 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____7 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____8 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a_____9 file=exstates
+$tranprop_ADC(2)____1^a_____0_to_1^a____10 file=exstates
+$end

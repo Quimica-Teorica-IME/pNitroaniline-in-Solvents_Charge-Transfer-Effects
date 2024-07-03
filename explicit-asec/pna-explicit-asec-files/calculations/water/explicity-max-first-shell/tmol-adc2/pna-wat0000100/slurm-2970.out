@@ -1,0 +1,25 @@
+
+## Jobs ativos de mmaximo: 
+
+squeue: error: Invalid user: mmaximo
+
+             JOBID PARTITION     NAME     USER ST       TIME  NODES NODELIST(REASON)
+
+## Node de execucao do job:         n02 
+
+
+## Numero de tarefas para este job: 16 
+
+
+## Diretorio de submissao do job:   /home/mmaximo/pna-asec/water/explicity-max-first-shell/tmol-adc2/pna-wat0000100 
+
+
+## Diretorio de scratch do job:     /data/mmaximo/2970 
+
+
+## Arquivo de input:                turbomole.slurm.in 
+
+ dscf ended normally
+ ricc2 ended normally
+
+## Job finalizado em 20-04-2024 as 17:26:41 ###################

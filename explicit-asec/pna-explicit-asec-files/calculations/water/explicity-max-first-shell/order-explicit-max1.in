@@ -1,0 +1,20 @@
+ljname = pna-wat.txt         
+inname = pna-wat.2.xyz
+nmol = 1 2148
+dens = 0
+cm = -1
+normcharge = 100
+printconfig = yes
+printformat = 3
+topfile = gaussian-top.txt
+#botfile = gaussian-bot-full.txt
+#midfile = gaussian-bot-full.txt
+printdummy = no
+molprint = 18 1062
+printinterval = 1
+freeze = 1, 2, 3
+angle = no
+hbond = no
+$end
+
+
