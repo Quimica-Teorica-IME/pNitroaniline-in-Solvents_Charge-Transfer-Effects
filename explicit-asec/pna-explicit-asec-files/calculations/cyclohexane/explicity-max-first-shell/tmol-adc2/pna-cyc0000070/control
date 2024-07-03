@@ -1,0 +1,87 @@
+$title
+$operating system unix
+$symmetry c1
+$coord    file=coord
+$user-defined bonds    file=coord
+$atoms
+c  1-6                                                                         \
+   basis =c def2-TZVPD                                                         \
+   cbas  =c def2-TZVPD
+h  7-10,15-16                                                                  \
+   basis =h def2-TZVPD                                                         \
+   cbas  =h def2-TZVPD
+n  11,14                                                                       \
+   basis =n def2-TZVPD                                                         \
+   cbas  =n def2-TZVPD
+o  12-13                                                                       \
+   basis =o def2-TZVPD                                                         \
+   cbas  =o def2-TZVPD
+c  17-22,35-40,53-58,71-76,89-94,107-112                                       \
+   basis =c def-SV(P)                                                          \
+   cbas  =c def-SV(P)
+h  23-34,41-52,59-70,77-88,95-106,113-124                                      \
+   basis =h def-SV(P)                                                          \
+   cbas  =h def-SV(P)
+$basis    file=basis
+$point_charges nocheck file=pointcharges
+$rundimensions
+   dim(fock,dens)=691513
+   natoms=124
+   nshell=522
+   nbf(CAO)=1174
+   nbf(AO)=1078
+   dim(trafo[SAO<-->AO/CAO])=1366
+   rhfshells=1
+$scfmo   file=mos
+$closed shells
+ a       1-180                                  ( 2 )
+$scfiterlimit      300
+$scfconv        7
+$thize     0.10000000E-04
+$thime        5
+$scfdamp   start=0.300  step=0.050  min=0.100
+$scfdump
+$scfintunit
+ unit=30       size=0        file=twoint
+$scfdiis
+$scforbitalshift  automatic=.1
+$drvopt
+   cartesian  on
+   basis      off
+   global     off
+   hessian    on
+   dipole     on
+   nuclear polarizability
+$interconversion  off
+   qconv=1.d-7
+   maxiter=25
+$optimize
+   internal   off
+   cartesian  on
+   global     off
+   basis      off   logarithm
+$coordinateupdate
+   dqmax=0.3
+   interpolate  on
+   statistics    5
+$forceupdate
+   ahlrichs numgeo=0  mingeo=3 maxgeo=4 modus=<g|dq> dynamic fail=0.3
+   threig=0.005  reseig=0.005  thrbig=3.0  scale=1.00  damping=0.0
+$forceinit on
+   diag=default
+$energy    file=energy
+$grad    file=gradient
+$forceapprox    file=forceapprox
+$lock off
+$maxcor      500
+$denconv     0.10000000E-06
+$freeze
+ implicit core=   46 virt=    0
+$cbas    file=auxbasis
+$ricc2
+  adc(2)
+$excitations
+  irrep=a  multiplicity=  1  nexc= 10  npre=  0  nstart=  0
+  spectrum  states=all  operators=diplen,dipvel,angmom
+$last step     define
+$end
